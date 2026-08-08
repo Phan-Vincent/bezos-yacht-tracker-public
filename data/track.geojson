@@ -1,0 +1,37 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            166.98098,
+            -14.8252
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "KORU",
+        "vessel_id": "koru"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            167.0799,
+            -14.80088
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "ABEONA",
+        "vessel_id": "abeona"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
