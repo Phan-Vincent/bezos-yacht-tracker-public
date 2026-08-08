@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "confidence": 1.0,
+      "details": {
+        "episode_id": 35,
+        "gap_hours": 265.6491039113889,
+        "last_observation_at": "2026-07-17T06:06:00+00:00",
+        "site_url": ""
+      },
+      "id": "signal-gap:35",
+      "lat": -14.80088,
+      "lon": 167.0799,
+      "occurred_at": "2026-07-28T07:44:56.774081+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
+        "episode_id": 17,
+        "gap_hours": 326.6259748369444,
+        "last_observation_at": "2026-07-17T05:20:00+00:00",
+        "reconciled_from": "legacy_collapsed",
+        "site_url": ""
+      },
+      "id": "signal-gap:17",
+      "lat": -14.8252,
+      "lon": 166.98098,
+      "occurred_at": "2026-07-07T10:48:18.792563+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    }
+  ],
+  "generated_at": "2026-08-08T06:20:41.010433+00:00",
+  "schema_version": 1
+}
