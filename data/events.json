@@ -3,6 +3,21 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 35,
+        "gap_hours": 284.68422901555556,
+        "site_url": ""
+      },
+      "id": "signal-restored:35",
+      "lat": -9.42362,
+      "lon": 159.94029,
+      "occurred_at": "2026-08-09T04:26:00+00:00",
+      "type": "SIGNAL_RESTORED",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 17,
         "gap_hours": 784.6281131769443,
         "site_url": ""
@@ -49,6 +64,6 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-08-09T04:40:41.160143+00:00",
+  "generated_at": "2026-08-09T04:45:47.002044+00:00",
   "schema_version": 1
 }
