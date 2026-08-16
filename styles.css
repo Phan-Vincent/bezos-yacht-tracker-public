@@ -37,6 +37,9 @@ h1 { max-width: 820px; font-size: clamp(4rem, 10vw, 8.8rem); line-height: .82; }
 h2 { font-size: clamp(2.6rem, 6vw, 5rem); line-height: .94; }
 .lede { max-width: 640px; margin: 36px 0; color: #c6d6d1; font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.55; }
 .system-line { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: #a9bbb6; font: .75rem/1.4 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
+.follow-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.follow-btn { padding: 12px 20px; border: 1px solid rgba(255,255,255,.28); border-radius: 99px; color: var(--paper); background: rgba(255,255,255,.06); font: 700 .78rem/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; text-decoration: none; }
+.follow-btn:hover { background: var(--aqua); color: var(--ink); border-color: var(--aqua); }
 .status-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); box-shadow: 0 0 0 5px rgba(124,138,134,.12); }
 .status-dot.healthy { background: var(--aqua); box-shadow: 0 0 0 5px rgba(98,215,200,.12); }
 .divider { width: 1px; height: 16px; background: rgba(255,255,255,.25); }
