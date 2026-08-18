@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T02:30:47.011434+00:00",
+  "generated_at": "2026-08-18T02:45:47.008130+00:00",
   "pairing": null,
-  "public_data_through": "2026-08-18T02:15:47.011434+00:00",
+  "public_data_through": "2026-08-18T02:30:47.008130+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -18,7 +18,7 @@
         "heading": null,
         "lat": -16.91745,
         "lon": 145.78346,
-        "observed_at": "2026-08-18T02:13:00+00:00",
+        "observed_at": "2026-08-18T02:28:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -28,7 +28,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 779.8,
+      "age_minutes": 794.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
