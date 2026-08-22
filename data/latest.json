@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-22T22:20:17.028134+00:00",
+  "generated_at": "2026-08-22T22:35:17.014876+00:00",
   "pairing": {
     "distance_nm": 1853.0,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-08-22T22:05:17.028134+00:00",
+  "public_data_through": "2026-08-22T22:20:17.014876+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -20,8 +20,8 @@
         "cog": 13.0,
         "heading": null,
         "lat": -16.91746,
-        "lon": 145.78345,
-        "observed_at": "2026-08-22T22:04:00+00:00",
+        "lon": 145.78344,
+        "observed_at": "2026-08-22T22:19:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -38,9 +38,9 @@
       "latest": {
         "cog": 107.0,
         "heading": null,
-        "lat": -8.74508,
+        "lat": -8.74509,
         "lon": 115.21166,
-        "observed_at": "2026-08-22T22:02:00+00:00",
+        "observed_at": "2026-08-22T22:17:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
