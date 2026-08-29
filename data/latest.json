@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-29T06:30:17.015645+00:00",
+  "generated_at": "2026-08-29T06:45:17.011401+00:00",
   "pairing": {
     "distance_nm": 1853.0,
-    "observations_within_hours": 0.0
+    "observations_within_hours": 0.3
   },
-  "public_data_through": "2026-08-29T06:15:17.015645+00:00",
+  "public_data_through": "2026-08-29T06:30:17.011401+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -12,7 +12,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 17.3,
+      "age_minutes": 32.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -28,7 +28,7 @@
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "current"
+      "status": "stale"
     },
     {
       "age_minutes": 16.3,
@@ -39,8 +39,8 @@
         "cog": 107.0,
         "heading": null,
         "lat": -8.74512,
-        "lon": 115.21165,
-        "observed_at": "2026-08-29T06:14:00+00:00",
+        "lon": 115.21167,
+        "observed_at": "2026-08-29T06:29:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
