@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-31T19:20:17.017642+00:00",
+  "generated_at": "2026-08-31T19:35:17.009292+00:00",
   "pairing": {
     "distance_nm": 1853.0,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-08-31T19:05:17.017642+00:00",
+  "public_data_through": "2026-08-31T19:20:17.009292+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -17,11 +17,11 @@
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 14.0,
+        "cog": 13.0,
         "heading": null,
         "lat": -16.91745,
         "lon": 145.78345,
-        "observed_at": "2026-08-31T19:04:00+00:00",
+        "observed_at": "2026-08-31T19:19:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -40,7 +40,7 @@
         "heading": null,
         "lat": -8.74509,
         "lon": 115.21166,
-        "observed_at": "2026-08-31T19:02:00+00:00",
+        "observed_at": "2026-08-31T19:17:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
