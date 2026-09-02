@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T19:40:17.044942+00:00",
+  "generated_at": "2026-09-02T19:56:17.032695+00:00",
   "pairing": {
     "distance_nm": 1853.0,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-02T19:25:17.044942+00:00",
+  "public_data_through": "2026-09-02T19:41:17.032695+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -12,7 +12,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 18.3,
+      "age_minutes": 19.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -20,8 +20,8 @@
         "cog": 13.0,
         "heading": null,
         "lat": -16.91745,
-        "lon": 145.78346,
-        "observed_at": "2026-09-02T19:22:00+00:00",
+        "lon": 145.78345,
+        "observed_at": "2026-09-02T19:37:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -31,7 +31,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 17.3,
+      "age_minutes": 18.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -40,7 +40,7 @@
         "heading": null,
         "lat": -8.74509,
         "lon": 115.21166,
-        "observed_at": "2026-09-02T19:23:00+00:00",
+        "observed_at": "2026-09-02T19:38:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
