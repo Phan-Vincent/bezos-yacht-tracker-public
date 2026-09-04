@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-04T16:55:17.025353+00:00",
+  "generated_at": "2026-09-04T17:10:17.034383+00:00",
   "pairing": {
     "distance_nm": 1853.0,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-04T16:40:17.025353+00:00",
+  "public_data_through": "2026-09-04T16:55:17.034383+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
-    "aisstream": "healthy"
+    "aisstream": "unavailable"
   },
   "vessels": [
     {
@@ -21,7 +21,7 @@
         "heading": null,
         "lat": -16.91745,
         "lon": 145.78346,
-        "observed_at": "2026-09-04T16:40:00+00:00",
+        "observed_at": "2026-09-04T16:55:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -36,11 +36,11 @@
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 107.0,
+        "cog": 106.0,
         "heading": null,
-        "lat": -8.7451,
+        "lat": -8.74509,
         "lon": 115.21169,
-        "observed_at": "2026-09-04T16:38:00+00:00",
+        "observed_at": "2026-09-04T16:53:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
