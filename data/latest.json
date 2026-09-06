@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-06T02:30:17.835096+00:00",
+  "generated_at": "2026-09-06T02:45:17.006690+00:00",
   "pairing": {
-    "distance_nm": 1843.4,
+    "distance_nm": 1841.5,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-06T02:15:17.835096+00:00",
+  "public_data_through": "2026-09-06T02:30:17.006690+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -19,9 +19,9 @@
       "latest": {
         "cog": 13.0,
         "heading": null,
-        "lat": -16.91745,
-        "lon": 145.78346,
-        "observed_at": "2026-09-06T02:13:00+00:00",
+        "lat": -16.91746,
+        "lon": 145.78347,
+        "observed_at": "2026-09-06T02:28:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -38,10 +38,10 @@
       "latest": {
         "cog": 68.0,
         "heading": null,
-        "lat": -8.63417,
-        "lon": 115.4203,
-        "observed_at": "2026-09-06T02:13:00+00:00",
-        "sog": 9.0,
+        "lat": -8.62187,
+        "lon": 115.45737,
+        "observed_at": "2026-09-06T02:28:00+00:00",
+        "sog": 10.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
