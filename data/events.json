@@ -3,6 +3,22 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 41,
+        "gap_hours": 6.0114121222222225,
+        "last_observation_at": "2026-09-06T23:43:00+00:00",
+        "site_url": ""
+      },
+      "id": "signal-gap:41",
+      "lat": -5.34381,
+      "lon": 112.42955,
+      "occurred_at": "2026-09-07T05:43:41.083640+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 40,
         "gap_hours": 16.783333333333335,
         "site_url": ""
@@ -219,6 +235,6 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-09-07T05:45:17.011001+00:00",
+  "generated_at": "2026-09-07T06:00:17.017725+00:00",
   "schema_version": 1
 }
