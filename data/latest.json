@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T06:01:08.998882+00:00",
+  "generated_at": "2026-09-08T06:15:17.036049+00:00",
   "pairing": null,
-  "public_data_through": "2026-09-08T05:46:08.998882+00:00",
+  "public_data_through": "2026-09-08T06:00:17.036049+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -9,7 +9,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 15.1,
+      "age_minutes": 29.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -28,7 +28,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 1818.1,
+      "age_minutes": 1832.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
