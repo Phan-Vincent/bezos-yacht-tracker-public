@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T04:50:17.023615+00:00",
+  "generated_at": "2026-09-09T05:05:17.012092+00:00",
   "pairing": {
-    "distance_nm": 2712.9,
+    "distance_nm": 2714.4,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-09T04:35:17.023615+00:00",
+  "public_data_through": "2026-09-09T04:50:17.012092+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_health": {
@@ -19,9 +19,9 @@
       "latest": {
         "cog": 13.0,
         "heading": null,
-        "lat": -16.91745,
-        "lon": 145.78344,
-        "observed_at": "2026-09-09T04:34:00+00:00",
+        "lat": -16.91746,
+        "lon": 145.78345,
+        "observed_at": "2026-09-09T04:49:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
@@ -36,12 +36,12 @@
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 303.3,
+        "cog": 17.5,
         "heading": null,
-        "lat": 1.2187,
-        "lon": 103.80095,
-        "observed_at": "2026-09-09T04:35:00+00:00",
-        "sog": 10.6,
+        "lat": 1.247,
+        "lon": 103.78672,
+        "observed_at": "2026-09-09T04:50:00+00:00",
+        "sog": 6.2,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
