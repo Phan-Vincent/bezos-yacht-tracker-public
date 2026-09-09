@@ -15694,14 +15694,18 @@
           [
             103.81286,
             1.26283
+          ],
+          [
+            103.81286,
+            1.26283
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-09T07:59:00+00:00",
+        "ended_at": "2026-09-09T08:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 25,
+        "point_count": 26,
         "segment_index": 5,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
