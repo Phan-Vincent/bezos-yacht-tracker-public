@@ -34,7 +34,7 @@
         <p class="lede">Tracking Koru and support vessel Abeona with source health, explicit uncertainty, and no invented coordinates.</p>
         <div class="system-line">
           <span id="source-dot" class="status-dot"></span>
-          <span id="source-health">Loading source health…</span>
+          <span id="source-health" aria-live="polite">Loading source health…</span>
           <span class="divider"></span>
           <span id="data-through">Loading public window…</span>
         </div>
@@ -61,8 +61,9 @@
             <p class="eyebrow">30-DAY TRACE</p>
             <h2 id="map-title">Movement, without guesswork</h2>
           </div>
-          <p>Lines stop where verified AIS stops. A gap is shown as a gap.</p>
+          <p>Lines stop where verified AIS stops. The page refreshes every five minutes.</p>
         </div>
+        <p id="map-summary" class="map-summary" aria-live="polite">Loading route continuity…</p>
         <div id="map" role="region" aria-label="Map of verified vessel tracks"></div>
       </section>
 
@@ -97,4 +98,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-

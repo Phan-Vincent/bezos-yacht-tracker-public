@@ -19,8 +19,7 @@ body {
 }
 a { color: inherit; }
 .hero {
-  min-height: 70vh;
-  padding: 24px clamp(22px, 5vw, 76px) 72px;
+  padding: 24px clamp(22px, 5vw, 76px) 58px;
   color: var(--paper);
   background:
     radial-gradient(circle at 75% 25%, rgba(98, 215, 200, .18), transparent 28%),
@@ -30,16 +29,17 @@ nav { display: flex; justify-content: space-between; align-items: center; gap: 2
 .brand { font: 700 .78rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; text-decoration: none; }
 .nav-links { display: flex; gap: 24px; font-size: .86rem; }
 .nav-links a { color: #bfd0cb; text-decoration: none; }
-.hero-copy { max-width: 950px; margin-top: clamp(90px, 15vh, 170px); }
+.hero-copy { max-width: 950px; margin-top: clamp(54px, 8vh, 92px); }
 .eyebrow { margin: 0 0 18px; color: var(--coral); font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .18em; }
 h1, h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.045em; }
-h1 { max-width: 820px; font-size: clamp(4rem, 10vw, 8.8rem); line-height: .82; }
+h1 { max-width: 820px; font-size: clamp(3.4rem, 8vw, 7rem); line-height: .86; }
 h2 { font-size: clamp(2.6rem, 6vw, 5rem); line-height: .94; }
 .lede { max-width: 640px; margin: 36px 0; color: #c6d6d1; font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.55; }
 .system-line { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: #a9bbb6; font: .75rem/1.4 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
 .follow-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .follow-btn { padding: 12px 20px; border: 1px solid rgba(255,255,255,.28); border-radius: 99px; color: var(--paper); background: rgba(255,255,255,.06); font: 700 .78rem/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; text-decoration: none; }
 .follow-btn:hover { background: var(--aqua); color: var(--ink); border-color: var(--aqua); }
+.follow-btn:focus-visible, a:focus-visible { outline: 3px solid var(--aqua); outline-offset: 4px; }
 .status-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); box-shadow: 0 0 0 5px rgba(124,138,134,.12); }
 .status-dot.healthy { background: var(--aqua); box-shadow: 0 0 0 5px rgba(98,215,200,.12); }
 .divider { width: 1px; height: 16px; background: rgba(255,255,255,.25); }
@@ -52,7 +52,9 @@ main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
 .vessel-role { color: var(--muted); font: .72rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .12em; }
 .status-pill { height: fit-content; padding: 8px 12px; border-radius: 99px; background: var(--mist); font: 700 .68rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
 .status-pill.current { background: #ccece5; }
+.status-pill.stale { background: #fff0bf; color: #644b00; }
 .status-pill.signal_gap { background: #ffe0d7; color: #8c2e19; }
+.status-pill.source_unavailable { background: #e3e3e3; color: #4b5552; }
 .coordinates { margin: auto 0 12px; font: 500 clamp(1.35rem, 3vw, 2.2rem)/1.2 ui-monospace, monospace; }
 .vessel-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 24px; border-top: 1px solid var(--line); }
 .vessel-meta dt { color: var(--muted); font: .66rem ui-monospace, monospace; text-transform: uppercase; }
@@ -61,6 +63,7 @@ main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
 .map-section { color: var(--paper); background: var(--deep); }
 .map-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 38px; }
 .map-heading > p { max-width: 360px; color: #a8bbb6; line-height: 1.5; }
+.map-summary { margin: 0 0 18px; color: #a8bbb6; font: .76rem/1.5 ui-monospace, monospace; letter-spacing: .03em; }
 #map { height: min(68vh, 720px); min-height: 460px; background: #113841; }
 .leaflet-container { font-family: inherit; }
 .timeline-section { background: #e8e3d7; }
@@ -79,11 +82,10 @@ footer p { max-width: 650px; }
 
 @media (max-width: 760px) {
   .nav-links { display: none; }
-  .hero { min-height: 82vh; }
+  .hero { padding-bottom: 48px; }
   .vessel-grid, .method-section, .method-grid { grid-template-columns: 1fr; }
   .section-heading, .map-heading { display: block; }
   .map-heading > p { margin-top: 22px; }
   .event { grid-template-columns: 1fr; gap: 9px; }
   footer { display: block; }
 }
-
