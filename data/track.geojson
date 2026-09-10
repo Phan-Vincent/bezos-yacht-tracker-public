@@ -10962,14 +10962,18 @@
           [
             145.78344,
             -16.91746
+          ],
+          [
+            145.78345,
+            -16.91746
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-10T21:40:08.680926+00:00",
+        "ended_at": "2026-09-10T21:43:07.561969+00:00",
         "name": "KORU",
-        "point_count": 2740,
+        "point_count": 2741,
         "segment_index": 0,
         "started_at": "2026-08-16T23:20:00+00:00",
         "vessel_id": "koru"
