@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-11T10:05:08.842381+00:00",
+  "generated_at": "2026-09-11T10:10:17.014165+00:00",
   "pairing": {
     "distance_nm": 2713.4,
-    "observations_within_hours": 0.1
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-11T09:50:08.842381+00:00",
+  "public_data_through": "2026-09-11T09:55:17.014165+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-11T09:43:08.000727+00:00",
-      "position_age_minutes": 22.0,
+      "last_accepted_position_at": "2026-09-11T09:52:08.113887+00:00",
+      "position_age_minutes": 18.1,
       "transport_status": "connected"
     }
   },
@@ -19,18 +19,18 @@
   },
   "vessels": [
     {
-      "age_minutes": 22.0,
+      "age_minutes": 15.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 78.3,
-        "heading": 13.0,
+        "cog": 13.0,
+        "heading": null,
         "lat": -16.91746,
-        "lon": 145.78345,
-        "observed_at": "2026-09-11T09:43:08.000727+00:00",
+        "lon": 145.78346,
+        "observed_at": "2026-09-11T09:55:00+00:00",
         "sog": 0.0,
-        "source": "aisstream"
+        "source": "myshiptracking"
       },
       "mmsi": "319225400",
       "name": "KORU",
@@ -38,7 +38,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 30.1,
+      "age_minutes": 17.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -46,15 +46,15 @@
         "cog": 264.0,
         "heading": null,
         "lat": 1.26284,
-        "lon": 103.81286,
-        "observed_at": "2026-09-11T09:35:00+00:00",
+        "lon": 103.81285,
+        "observed_at": "2026-09-11T09:53:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
