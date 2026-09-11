@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-11T16:55:17.016900+00:00",
+  "generated_at": "2026-09-11T17:00:17.123908+00:00",
   "pairing": {
     "distance_nm": 2713.4,
-    "observations_within_hours": 0.3
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-11T16:40:17.016900+00:00",
+  "public_data_through": "2026-09-11T16:45:17.123908+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-09-11T16:40:08.996406+00:00",
-      "position_age_minutes": 15.1,
+      "position_age_minutes": 20.1,
       "transport_status": "connected"
     }
   },
@@ -19,7 +19,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 15.1,
+      "age_minutes": 20.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -38,23 +38,23 @@
       "status": "current"
     },
     {
-      "age_minutes": 32.3,
+      "age_minutes": 19.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 265.0,
+        "cog": 264.0,
         "heading": null,
         "lat": 1.26282,
-        "lon": 103.81285,
-        "observed_at": "2026-09-11T16:23:00+00:00",
+        "lon": 103.81287,
+        "observed_at": "2026-09-11T16:41:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
