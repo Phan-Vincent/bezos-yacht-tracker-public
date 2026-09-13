@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-13T09:15:19.165894+00:00",
+  "generated_at": "2026-09-13T09:30:19.196811+00:00",
   "pairing": {
     "distance_nm": 2713.4,
     "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-13T09:00:19.165894+00:00",
+  "public_data_through": "2026-09-13T09:15:19.196811+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-13T08:58:08.453734+00:00",
+      "last_accepted_position_at": "2026-09-13T09:13:08.506059+00:00",
       "position_age_minutes": 17.2,
       "transport_status": "connected"
     }
@@ -24,11 +24,11 @@
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 120.3,
+        "cog": 80.1,
         "heading": 13.0,
         "lat": -16.91745,
         "lon": 145.78345,
-        "observed_at": "2026-09-13T08:58:08.453734+00:00",
+        "observed_at": "2026-09-13T09:13:08.506059+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -46,8 +46,8 @@
         "cog": 264.0,
         "heading": null,
         "lat": 1.26284,
-        "lon": 103.81286,
-        "observed_at": "2026-09-13T08:59:00+00:00",
+        "lon": 103.81287,
+        "observed_at": "2026-09-13T09:14:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
