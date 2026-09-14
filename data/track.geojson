@@ -16590,14 +16590,18 @@
           [
             147.55742,
             -19.19856
+          ],
+          [
+            147.56835,
+            -19.20907
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-14T15:53:54.612675+00:00",
+        "ended_at": "2026-09-14T15:58:24.862055+00:00",
         "name": "KORU",
-        "point_count": 94,
+        "point_count": 95,
         "segment_index": 1,
         "started_at": "2026-09-14T09:12:00+00:00",
         "vessel_id": "koru"
@@ -25370,14 +25374,18 @@
           [
             103.81286,
             1.26284
+          ],
+          [
+            103.81286,
+            1.26283
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-14T15:35:00+00:00",
+        "ended_at": "2026-09-14T15:59:00+00:00",
         "name": "ABEONA",
-        "point_count": 524,
+        "point_count": 525,
         "segment_index": 5,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
