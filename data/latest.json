@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-14T00:40:19.206367+00:00",
+  "generated_at": "2026-09-14T00:45:19.194000+00:00",
   "pairing": {
-    "distance_nm": 2715.5,
-    "observations_within_hours": 0.3
+    "distance_nm": 2716.0,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-14T00:25:19.206367+00:00",
+  "public_data_through": "2026-09-14T00:30:19.194000+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-14T00:25:14.942456+00:00",
-      "position_age_minutes": 15.1,
+      "last_accepted_position_at": "2026-09-14T00:28:24.059050+00:00",
+      "position_age_minutes": 16.9,
       "transport_status": "connected"
     }
   },
@@ -19,17 +19,17 @@
   },
   "vessels": [
     {
-      "age_minutes": 15.1,
+      "age_minutes": 16.9,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 86.6,
-        "heading": 89.0,
-        "lat": -16.80265,
-        "lon": 145.86418,
-        "observed_at": "2026-09-14T00:25:14.942456+00:00",
-        "sog": 11.6,
+        "cog": 79.5,
+        "heading": 84.0,
+        "lat": -16.80101,
+        "lon": 145.87506,
+        "observed_at": "2026-09-14T00:28:24.059050+00:00",
+        "sog": 12.3,
         "source": "aisstream"
       },
       "mmsi": "319225400",
@@ -38,7 +38,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 32.3,
+      "age_minutes": 19.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -47,14 +47,14 @@
         "heading": null,
         "lat": 1.26281,
         "lon": 103.81284,
-        "observed_at": "2026-09-14T00:08:00+00:00",
+        "observed_at": "2026-09-14T00:26:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
