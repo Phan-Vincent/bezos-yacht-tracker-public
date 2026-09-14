@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-14T17:25:19.173749+00:00",
+  "generated_at": "2026-09-14T17:30:19.210503+00:00",
   "pairing": {
-    "distance_nm": 2868.8,
-    "observations_within_hours": 0.2
+    "distance_nm": 2870.1,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-14T17:10:19.173749+00:00",
+  "public_data_through": "2026-09-14T17:15:19.210503+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-14T17:08:14.126887+00:00",
-      "position_age_minutes": 17.1,
+      "last_accepted_position_at": "2026-09-14T17:14:53.472683+00:00",
+      "position_age_minutes": 15.4,
       "transport_status": "connected"
     }
   },
@@ -19,18 +19,18 @@
   },
   "vessels": [
     {
-      "age_minutes": 17.1,
+      "age_minutes": 15.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 134.2,
-        "heading": 134.0,
-        "lat": -19.36742,
-        "lon": 147.74291,
-        "observed_at": "2026-09-14T17:08:14.126887+00:00",
+        "cog": 139.8,
+        "heading": null,
+        "lat": -19.38371,
+        "lon": 147.75993,
+        "observed_at": "2026-09-14T17:15:00+00:00",
         "sog": 11.8,
-        "source": "aisstream"
+        "source": "myshiptracking"
       },
       "mmsi": "319225400",
       "name": "KORU",
@@ -38,18 +38,18 @@
       "status": "current"
     },
     {
-      "age_minutes": 26.3,
+      "age_minutes": 15.4,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 264.0,
-        "heading": null,
+        "cog": 220.9,
+        "heading": 264.0,
         "lat": 1.26281,
-        "lon": 103.81285,
-        "observed_at": "2026-09-14T16:59:00+00:00",
+        "lon": 103.81284,
+        "observed_at": "2026-09-14T17:14:53.472683+00:00",
         "sog": 0.0,
-        "source": "myshiptracking"
+        "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
