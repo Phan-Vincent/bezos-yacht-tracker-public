@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-14T14:35:19.181015+00:00",
+  "generated_at": "2026-09-14T14:40:19.219629+00:00",
   "pairing": {
-    "distance_nm": 2837.1,
-    "observations_within_hours": 0.2
+    "distance_nm": 2838.8,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-14T14:20:19.181015+00:00",
+  "public_data_through": "2026-09-14T14:25:19.219629+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-14T14:12:35.040587+00:00",
-      "position_age_minutes": 22.7,
+      "last_accepted_position_at": "2026-09-14T14:25:04.409574+00:00",
+      "position_age_minutes": 15.2,
       "transport_status": "connected"
     }
   },
@@ -19,18 +19,18 @@
   },
   "vessels": [
     {
-      "age_minutes": 19.3,
+      "age_minutes": 15.2,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 133.5,
-        "heading": null,
-        "lat": -19.00725,
-        "lon": 147.28901,
-        "observed_at": "2026-09-14T14:16:00+00:00",
-        "sog": 11.7,
-        "source": "myshiptracking"
+        "cog": 121.6,
+        "heading": 123.0,
+        "lat": -19.02348,
+        "lon": 147.31429,
+        "observed_at": "2026-09-14T14:25:04.409574+00:00",
+        "sog": 11.9,
+        "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
@@ -38,7 +38,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 30.3,
+      "age_minutes": 17.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -46,15 +46,15 @@
         "cog": 264.0,
         "heading": null,
         "lat": 1.26283,
-        "lon": 103.81284,
-        "observed_at": "2026-09-14T14:05:00+00:00",
+        "lon": 103.81285,
+        "observed_at": "2026-09-14T14:23:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
