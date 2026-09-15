@@ -26028,8 +26028,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-15T19:35:19.207771+00:00",
-    "public_data_through": "2026-09-15T19:20:19.207771+00:00"
+    "generated_at": "2026-09-15T19:40:19.182526+00:00",
+    "public_data_through": "2026-09-15T19:25:19.182526+00:00"
   },
   "type": "FeatureCollection"
 }
