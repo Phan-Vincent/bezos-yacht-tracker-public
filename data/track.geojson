@@ -4,10 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            146.19069,
-            -16.68372
-          ],
-          [
             146.14738,
             -16.72895
           ],
@@ -16201,9 +16197,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 4048,
+        "point_count": 4047,
         "segment_index": 0,
-        "started_at": "2026-08-16T23:39:00+00:00",
+        "started_at": "2026-08-16T23:56:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -16826,14 +16822,18 @@
           [
             152.66799,
             -23.59911
+          ],
+          [
+            152.70662,
+            -23.63888
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-15T23:22:00+00:00",
+        "ended_at": "2026-09-15T23:38:00+00:00",
         "name": "KORU",
-        "point_count": 4,
+        "point_count": 5,
         "segment_index": 3,
         "started_at": "2026-09-15T22:38:00+00:00",
         "vessel_id": "koru"
@@ -26098,14 +26098,18 @@
           [
             103.81283,
             1.26282
+          ],
+          [
+            103.81283,
+            1.26282
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-15T23:20:00+00:00",
+        "ended_at": "2026-09-15T23:38:00+00:00",
         "name": "ABEONA",
-        "point_count": 647,
+        "point_count": 648,
         "segment_index": 5,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -26116,8 +26120,8 @@
   "properties": {
     "gap_count": 8,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-15T23:50:19.208956+00:00",
-    "public_data_through": "2026-09-15T23:35:19.208956+00:00"
+    "generated_at": "2026-09-15T23:55:16.602390+00:00",
+    "public_data_through": "2026-09-15T23:40:16.602390+00:00"
   },
   "type": "FeatureCollection"
 }
