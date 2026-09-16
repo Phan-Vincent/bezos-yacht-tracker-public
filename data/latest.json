@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-16T02:20:19.194517+00:00",
+  "generated_at": "2026-09-16T02:25:19.193258+00:00",
   "pairing": {
-    "distance_nm": 3242.7,
-    "observations_within_hours": 0.3
+    "distance_nm": 3242.4,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-16T02:05:19.194517+00:00",
+  "public_data_through": "2026-09-16T02:10:19.193258+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-16T02:02:38.466844+00:00",
-      "position_age_minutes": 17.7,
+      "last_accepted_position_at": "2026-09-16T02:09:18.310920+00:00",
+      "position_age_minutes": 16.0,
       "transport_status": "connected"
     }
   },
@@ -19,17 +19,17 @@
   },
   "vessels": [
     {
-      "age_minutes": 17.7,
+      "age_minutes": 16.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 212.1,
-        "heading": 211.0,
-        "lat": -24.03005,
-        "lon": 153.01314,
-        "observed_at": "2026-09-16T02:02:38.466844+00:00",
-        "sog": 12.9,
+        "cog": 213.5,
+        "heading": 213.0,
+        "lat": -24.05035,
+        "lon": 152.9991,
+        "observed_at": "2026-09-16T02:09:18.310920+00:00",
+        "sog": 13.0,
         "source": "aisstream"
       },
       "mmsi": "319225400",
@@ -38,7 +38,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 36.3,
+      "age_minutes": 17.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -47,14 +47,14 @@
         "heading": null,
         "lat": 1.26281,
         "lon": 103.81284,
-        "observed_at": "2026-09-16T01:44:00+00:00",
+        "observed_at": "2026-09-16T02:08:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
