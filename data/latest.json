@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-16T04:45:19.187669+00:00",
+  "generated_at": "2026-09-16T04:50:19.188882+00:00",
   "pairing": {
-    "distance_nm": 3246.5,
-    "observations_within_hours": 0.1
+    "distance_nm": 3247.5,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-16T04:30:19.187669+00:00",
+  "public_data_through": "2026-09-16T04:35:19.188882+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-16T04:27:58.419091+00:00",
-      "position_age_minutes": 17.3,
+      "last_accepted_position_at": "2026-09-16T04:34:58.107813+00:00",
+      "position_age_minutes": 15.4,
       "transport_status": "connected"
     }
   },
@@ -19,17 +19,17 @@
   },
   "vessels": [
     {
-      "age_minutes": 17.3,
+      "age_minutes": 15.4,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 158.6,
-        "heading": 164.0,
-        "lat": -24.48591,
-        "lon": 152.89763,
-        "observed_at": "2026-09-16T04:27:58.419091+00:00",
-        "sog": 12.6,
+        "cog": 160.1,
+        "heading": 163.0,
+        "lat": -24.50909,
+        "lon": 152.90674,
+        "observed_at": "2026-09-16T04:34:58.107813+00:00",
+        "sog": 12.5,
         "source": "aisstream"
       },
       "mmsi": "319225400",
@@ -38,18 +38,18 @@
       "status": "current"
     },
     {
-      "age_minutes": 24.3,
+      "age_minutes": 17.4,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 265.0,
-        "heading": null,
+        "cog": 328.4,
+        "heading": 265.0,
         "lat": 1.2628,
         "lon": 103.81285,
-        "observed_at": "2026-09-16T04:21:00+00:00",
+        "observed_at": "2026-09-16T04:32:55.606761+00:00",
         "sog": 0.0,
-        "source": "myshiptracking"
+        "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
