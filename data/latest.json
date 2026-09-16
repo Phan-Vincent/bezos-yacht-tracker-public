@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-16T06:20:19.200105+00:00",
+  "generated_at": "2026-09-16T06:25:26.611669+00:00",
   "pairing": {
-    "distance_nm": 3258.7,
-    "observations_within_hours": 0.2
+    "distance_nm": 3259.5,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-16T06:05:19.200105+00:00",
+  "public_data_through": "2026-09-16T06:10:26.611669+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-16T06:04:18.888075+00:00",
-      "position_age_minutes": 16.0,
+      "last_accepted_position_at": "2026-09-16T06:07:28.820361+00:00",
+      "position_age_minutes": 18.0,
       "transport_status": "connected"
     }
   },
@@ -19,18 +19,18 @@
   },
   "vessels": [
     {
-      "age_minutes": 16.0,
+      "age_minutes": 16.4,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 157.2,
-        "heading": 157.0,
-        "lat": -24.76742,
-        "lon": 153.01736,
-        "observed_at": "2026-09-16T06:04:18.888075+00:00",
-        "sog": 11.7,
-        "source": "aisstream"
+        "cog": 158.3,
+        "heading": null,
+        "lat": -24.78436,
+        "lon": 153.02497,
+        "observed_at": "2026-09-16T06:09:00+00:00",
+        "sog": 11.6,
+        "source": "myshiptracking"
       },
       "mmsi": "319225400",
       "name": "KORU",
@@ -38,7 +38,7 @@
       "status": "current"
     },
     {
-      "age_minutes": 30.3,
+      "age_minutes": 17.4,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -47,14 +47,14 @@
         "heading": null,
         "lat": 1.26283,
         "lon": 103.81285,
-        "observed_at": "2026-09-16T05:50:00+00:00",
+        "observed_at": "2026-09-16T06:08:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
