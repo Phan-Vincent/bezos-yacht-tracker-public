@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-16T05:20:19.185008+00:00",
+  "generated_at": "2026-09-16T05:25:19.195392+00:00",
   "pairing": {
-    "distance_nm": 3252.8,
-    "observations_within_hours": 0.3
+    "distance_nm": 3253.2,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-16T05:05:19.185008+00:00",
+  "public_data_through": "2026-09-16T05:10:19.195392+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-16T05:03:57.847380+00:00",
-      "position_age_minutes": 16.4,
+      "last_accepted_position_at": "2026-09-16T05:09:58.977569+00:00",
+      "position_age_minutes": 15.3,
       "transport_status": "connected"
     }
   },
@@ -19,17 +19,17 @@
   },
   "vessels": [
     {
-      "age_minutes": 16.4,
+      "age_minutes": 15.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 180.5,
+        "cog": 179.7,
         "heading": 180.0,
-        "lat": -24.57661,
-        "lon": 152.98123,
-        "observed_at": "2026-09-16T05:03:57.847380+00:00",
-        "sog": 11.7,
+        "lat": -24.59659,
+        "lon": 152.98113,
+        "observed_at": "2026-09-16T05:09:58.977569+00:00",
+        "sog": 12.1,
         "source": "aisstream"
       },
       "mmsi": "319225400",
@@ -38,23 +38,23 @@
       "status": "current"
     },
     {
-      "age_minutes": 36.3,
+      "age_minutes": 17.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
         "cog": 265.0,
         "heading": null,
-        "lat": 1.2628,
-        "lon": 103.81285,
-        "observed_at": "2026-09-16T04:44:00+00:00",
+        "lat": 1.26281,
+        "lon": 103.81286,
+        "observed_at": "2026-09-16T05:08:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
