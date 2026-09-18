@@ -3,6 +3,22 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 43,
+        "gap_hours": 6.008013006388889,
+        "last_observation_at": "2026-09-18T05:18:00+00:00",
+        "site_url": ""
+      },
+      "id": "signal-gap:43",
+      "lat": -24.82828,
+      "lon": 152.96231,
+      "occurred_at": "2026-09-18T11:18:28.846823+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 42,
         "gap_hours": 20.916666666666668,
         "site_url": ""
@@ -281,7 +297,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-09-18T11:30:19.183645+00:00",
-  "public_data_through": "2026-09-18T11:15:19.183645+00:00",
+  "generated_at": "2026-09-18T11:35:19.199314+00:00",
+  "public_data_through": "2026-09-18T11:20:19.199314+00:00",
   "schema_version": 1
 }
