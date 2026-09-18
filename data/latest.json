@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-18T05:10:20.141190+00:00",
+  "generated_at": "2026-09-18T05:15:19.816004+00:00",
   "pairing": {
-    "distance_nm": 3263.7,
-    "observations_within_hours": 0.1
+    "distance_nm": 3261.2,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-18T04:55:20.141190+00:00",
+  "public_data_through": "2026-09-18T05:00:19.816004+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-09-16T06:52:18.194299+00:00",
-      "position_age_minutes": 2778.0,
+      "position_age_minutes": 2783.0,
       "transport_status": "connected"
     }
   },
@@ -19,17 +19,17 @@
   },
   "vessels": [
     {
-      "age_minutes": 28.3,
+      "age_minutes": 18.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 324.5,
+        "cog": 324.6,
         "heading": null,
-        "lat": -24.92698,
-        "lon": 153.04681,
-        "observed_at": "2026-09-18T04:42:00+00:00",
-        "sog": 11.6,
+        "lat": -24.88538,
+        "lon": 153.01471,
+        "observed_at": "2026-09-18T04:57:00+00:00",
+        "sog": 12.8,
         "source": "myshiptracking"
       },
       "mmsi": "319225400",
@@ -38,23 +38,23 @@
       "status": "current"
     },
     {
-      "age_minutes": 32.3,
+      "age_minutes": 19.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
         "cog": 265.0,
         "heading": null,
-        "lat": 1.26282,
-        "lon": 103.81285,
-        "observed_at": "2026-09-18T04:38:00+00:00",
+        "lat": 1.26283,
+        "lon": 103.81286,
+        "observed_at": "2026-09-18T04:56:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
