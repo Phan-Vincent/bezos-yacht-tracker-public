@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-19T05:25:26.634895+00:00",
+  "generated_at": "2026-09-19T05:30:19.231784+00:00",
   "pairing": {
     "distance_nm": 3229.0,
-    "observations_within_hours": 0.2
+    "observations_within_hours": 0.1
   },
-  "public_data_through": "2026-09-19T05:10:26.634895+00:00",
+  "public_data_through": "2026-09-19T05:15:19.231784+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-09-19T01:38:56.510391+00:00",
-      "position_age_minutes": 226.5,
+      "position_age_minutes": 231.4,
       "transport_status": "connected"
     }
   },
@@ -19,26 +19,26 @@
   },
   "vessels": [
     {
-      "age_minutes": 32.4,
+      "age_minutes": 19.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 20.0,
+        "cog": 15.0,
         "heading": null,
-        "lat": -24.51645,
-        "lon": 152.53992,
-        "observed_at": "2026-09-19T04:53:00+00:00",
+        "lat": -24.51651,
+        "lon": 152.54002,
+        "observed_at": "2026-09-19T05:11:00+00:00",
         "sog": 0.0,
         "source": "myshiptracking"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 17.4,
+      "age_minutes": 22.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
