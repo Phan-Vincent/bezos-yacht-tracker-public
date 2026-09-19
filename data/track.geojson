@@ -17166,14 +17166,18 @@
           [
             152.54094,
             -24.51665
+          ],
+          [
+            152.5409,
+            -24.51665
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-19T16:41:00+00:00",
+        "ended_at": "2026-09-19T16:59:00+00:00",
         "name": "KORU",
-        "point_count": 49,
+        "point_count": 50,
         "segment_index": 5,
         "started_at": "2026-09-19T03:05:00+00:00",
         "vessel_id": "koru"
@@ -17183,10 +17187,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21169,
-            -8.74511
-          ],
           [
             115.21169,
             -8.74511
@@ -23489,9 +23489,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1575,
+        "point_count": 1574,
         "segment_index": 0,
-        "started_at": "2026-08-20T16:56:00+00:00",
+        "started_at": "2026-08-20T17:11:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27558,14 +27558,18 @@
           [
             103.81285,
             1.26279
+          ],
+          [
+            103.81285,
+            1.2628
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-19T16:38:00+00:00",
+        "ended_at": "2026-09-19T16:56:00+00:00",
         "name": "ABEONA",
-        "point_count": 1000,
+        "point_count": 1001,
         "segment_index": 2,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -27576,8 +27580,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-19T17:10:06.686012+00:00",
-    "public_data_through": "2026-09-19T16:55:06.686012+00:00"
+    "generated_at": "2026-09-19T17:15:19.183939+00:00",
+    "public_data_through": "2026-09-19T17:00:19.183939+00:00"
   },
   "type": "FeatureCollection"
 }
