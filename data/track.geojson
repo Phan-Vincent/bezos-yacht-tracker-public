@@ -27580,8 +27580,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-20T05:30:19.203541+00:00",
-    "public_data_through": "2026-09-20T05:15:19.203541+00:00"
+    "generated_at": "2026-09-20T05:35:19.196672+00:00",
+    "public_data_through": "2026-09-20T05:20:19.196672+00:00"
   },
   "type": "FeatureCollection"
 }
