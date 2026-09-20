@@ -17218,14 +17218,22 @@
           [
             152.54077,
             -24.51672
+          ],
+          [
+            152.54072,
+            -24.51671
+          ],
+          [
+            152.54077,
+            -24.51675
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-20T09:59:00+00:00",
+        "ended_at": "2026-09-20T10:14:56.690720+00:00",
         "name": "KORU",
-        "point_count": 131,
+        "point_count": 133,
         "segment_index": 5,
         "started_at": "2026-09-19T03:05:00+00:00",
         "vessel_id": "koru"
@@ -17235,10 +17243,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21164,
-            -8.74512
-          ],
           [
             115.21166,
             -8.74512
@@ -23265,9 +23269,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1506,
+        "point_count": 1505,
         "segment_index": 0,
-        "started_at": "2026-08-21T10:11:00+00:00",
+        "started_at": "2026-08-21T10:26:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27598,14 +27602,18 @@
           [
             103.81285,
             1.26282
+          ],
+          [
+            103.81285,
+            1.26282
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-20T09:56:00+00:00",
+        "ended_at": "2026-09-20T10:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 1066,
+        "point_count": 1067,
         "segment_index": 2,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -27616,8 +27624,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-20T10:25:19.186772+00:00",
-    "public_data_through": "2026-09-20T10:10:19.186772+00:00"
+    "generated_at": "2026-09-20T10:30:19.208513+00:00",
+    "public_data_through": "2026-09-20T10:15:19.208513+00:00"
   },
   "type": "FeatureCollection"
 }
