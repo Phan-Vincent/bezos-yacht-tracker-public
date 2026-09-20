@@ -8,10 +8,6 @@
             -16.91746
           ],
           [
-            145.78345,
-            -16.91746
-          ],
-          [
             145.78346,
             -16.91746
           ],
@@ -14513,9 +14509,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 3626,
+        "point_count": 3625,
         "segment_index": 0,
-        "started_at": "2026-08-21T09:13:00+00:00",
+        "started_at": "2026-08-21T09:28:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -17218,14 +17214,18 @@
           [
             152.54075,
             -24.51675
+          ],
+          [
+            152.54067,
+            -24.51679
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-20T08:59:00+00:00",
+        "ended_at": "2026-09-20T09:14:00+00:00",
         "name": "KORU",
-        "point_count": 126,
+        "point_count": 127,
         "segment_index": 5,
         "started_at": "2026-09-19T03:05:00+00:00",
         "vessel_id": "koru"
@@ -17235,10 +17235,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21164,
-            -8.74513
-          ],
           [
             115.21164,
             -8.74513
@@ -23281,9 +23277,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1510,
+        "point_count": 1509,
         "segment_index": 0,
-        "started_at": "2026-08-21T09:11:00+00:00",
+        "started_at": "2026-08-21T09:26:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27598,14 +27594,18 @@
           [
             103.81285,
             1.26283
+          ],
+          [
+            103.81285,
+            1.26283
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-20T08:56:00+00:00",
+        "ended_at": "2026-09-20T09:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 1062,
+        "point_count": 1063,
         "segment_index": 2,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -27616,8 +27616,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-20T09:25:19.183870+00:00",
-    "public_data_through": "2026-09-20T09:10:19.183870+00:00"
+    "generated_at": "2026-09-20T09:30:19.176434+00:00",
+    "public_data_through": "2026-09-20T09:15:19.176434+00:00"
   },
   "type": "FeatureCollection"
 }
