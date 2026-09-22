@@ -12,10 +12,6 @@
             -16.91745
           ],
           [
-            145.78345,
-            -16.91745
-          ],
-          [
             145.78346,
             -16.91746
           ],
@@ -13577,9 +13573,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 3392,
+        "point_count": 3391,
         "segment_index": 0,
-        "started_at": "2026-08-23T20:04:00+00:00",
+        "started_at": "2026-08-23T20:19:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -17131,10 +17127,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21166,
-            -8.74508
-          ],
           [
             115.21166,
             -8.74508
@@ -22233,9 +22225,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1274,
+        "point_count": 1273,
         "segment_index": 0,
-        "started_at": "2026-08-23T20:05:00+00:00",
+        "started_at": "2026-08-23T20:20:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27430,14 +27422,18 @@
           [
             103.81284,
             1.26281
+          ],
+          [
+            103.81284,
+            1.26281
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-22T19:44:00+00:00",
+        "ended_at": "2026-09-22T20:02:00+00:00",
         "name": "ABEONA",
-        "point_count": 1282,
+        "point_count": 1283,
         "segment_index": 2,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -27448,8 +27444,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-22T20:15:19.175502+00:00",
-    "public_data_through": "2026-09-22T20:00:19.175502+00:00"
+    "generated_at": "2026-09-22T20:20:19.173454+00:00",
+    "public_data_through": "2026-09-22T20:05:19.173454+00:00"
   },
   "type": "FeatureCollection"
 }
