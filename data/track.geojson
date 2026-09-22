@@ -41,10 +41,6 @@
           ],
           [
             145.78345,
-            -16.91745
-          ],
-          [
-            145.78345,
             -16.91746
           ],
           [
@@ -13689,9 +13685,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 3420,
+        "point_count": 3419,
         "segment_index": 0,
-        "started_at": "2026-08-23T13:04:00+00:00",
+        "started_at": "2026-08-23T13:19:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -17243,10 +17239,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21166,
-            -8.74511
-          ],
           [
             115.21167,
             -8.74512
@@ -22457,9 +22449,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1302,
+        "point_count": 1301,
         "segment_index": 0,
-        "started_at": "2026-08-23T13:02:00+00:00",
+        "started_at": "2026-08-23T13:17:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27550,14 +27542,18 @@
           [
             103.81284,
             1.26284
+          ],
+          [
+            103.81285,
+            1.26283
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-22T12:32:00+00:00",
+        "ended_at": "2026-09-22T13:02:00+00:00",
         "name": "ABEONA",
-        "point_count": 1256,
+        "point_count": 1257,
         "segment_index": 2,
         "started_at": "2026-09-09T02:05:00+00:00",
         "vessel_id": "abeona"
@@ -27568,8 +27564,8 @@
   "properties": {
     "gap_count": 7,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-22T13:15:19.180075+00:00",
-    "public_data_through": "2026-09-22T13:00:19.180075+00:00"
+    "generated_at": "2026-09-22T13:20:19.182525+00:00",
+    "public_data_through": "2026-09-22T13:05:19.182525+00:00"
   },
   "type": "FeatureCollection"
 }
