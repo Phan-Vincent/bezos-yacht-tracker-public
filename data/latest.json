@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-23T14:40:19.186872+00:00",
+  "generated_at": "2026-09-23T14:45:19.172291+00:00",
   "pairing": {
     "distance_nm": 3228.9,
-    "observations_within_hours": 0.2
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-23T14:25:19.186872+00:00",
+  "public_data_through": "2026-09-23T14:30:19.172291+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-23T14:02:56.357824+00:00",
-      "position_age_minutes": 37.4,
+      "last_accepted_position_at": "2026-09-23T14:26:55.294834+00:00",
+      "position_age_minutes": 18.4,
       "transport_status": "connected"
     }
   },
@@ -19,37 +19,37 @@
   },
   "vessels": [
     {
-      "age_minutes": 38.3,
+      "age_minutes": 16.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 135.0,
+        "cog": 128.0,
         "heading": null,
-        "lat": -24.51529,
-        "lon": 152.53958,
-        "observed_at": "2026-09-23T14:02:00+00:00",
+        "lat": -24.5154,
+        "lon": 152.53951,
+        "observed_at": "2026-09-23T14:29:00+00:00",
         "sog": 0.1,
         "source": "myshiptracking"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 26.3,
+      "age_minutes": 18.4,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 265.0,
-        "heading": null,
-        "lat": 1.26283,
+        "cog": 90.6,
+        "heading": 265.0,
+        "lat": 1.26284,
         "lon": 103.81285,
-        "observed_at": "2026-09-23T14:14:00+00:00",
+        "observed_at": "2026-09-23T14:26:55.294834+00:00",
         "sog": 0.0,
-        "source": "myshiptracking"
+        "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
