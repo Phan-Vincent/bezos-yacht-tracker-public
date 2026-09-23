@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-23T22:10:21.804073+00:00",
+  "generated_at": "2026-09-23T22:15:19.165415+00:00",
   "pairing": {
-    "distance_nm": 3228.9,
-    "observations_within_hours": 0.1
+    "distance_nm": 3229.0,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-09-23T21:55:21.804073+00:00",
+  "public_data_through": "2026-09-23T22:00:19.165415+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-09-23T21:02:56.171665+00:00",
-      "position_age_minutes": 67.4,
+      "last_accepted_position_at": "2026-09-23T21:56:55.316751+00:00",
+      "position_age_minutes": 18.4,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 29.4,
+      "age_minutes": 16.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 106.0,
+        "cog": 114.0,
         "heading": null,
-        "lat": -24.5155,
-        "lon": 152.53946,
-        "observed_at": "2026-09-23T21:41:00+00:00",
+        "lat": -24.51528,
+        "lon": 152.53964,
+        "observed_at": "2026-09-23T21:59:00+00:00",
         "sog": 0.3,
         "source": "myshiptracking"
       },
@@ -38,18 +38,18 @@
       "status": "current"
     },
     {
-      "age_minutes": 26.4,
+      "age_minutes": 18.4,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 264.0,
-        "heading": null,
-        "lat": 1.26282,
-        "lon": 103.81284,
-        "observed_at": "2026-09-23T21:44:00+00:00",
+        "cog": 125.5,
+        "heading": 264.0,
+        "lat": 1.26281,
+        "lon": 103.81285,
+        "observed_at": "2026-09-23T21:56:55.316751+00:00",
         "sog": 0.0,
-        "source": "myshiptracking"
+        "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
