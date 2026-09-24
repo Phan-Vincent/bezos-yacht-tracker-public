@@ -27094,14 +27094,18 @@
           [
             103.81285,
             1.26282
+          ],
+          [
+            103.81285,
+            1.26282
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-24T00:50:55.631372+00:00",
+        "ended_at": "2026-09-24T00:56:56.866496+00:00",
         "name": "ABEONA",
-        "point_count": 81,
+        "point_count": 82,
         "segment_index": 3,
         "started_at": "2026-09-23T09:56:55.106311+00:00",
         "vessel_id": "abeona"
@@ -27112,8 +27116,8 @@
   "properties": {
     "gap_count": 9,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-24T01:10:19.177604+00:00",
-    "public_data_through": "2026-09-24T00:55:19.177604+00:00"
+    "generated_at": "2026-09-24T01:15:19.164718+00:00",
+    "public_data_through": "2026-09-24T01:00:19.164718+00:00"
   },
   "type": "FeatureCollection"
 }
