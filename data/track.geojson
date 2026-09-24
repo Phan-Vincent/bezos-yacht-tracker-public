@@ -16857,10 +16857,6 @@
         "coordinates": [
           [
             115.21166,
-            -8.74509
-          ],
-          [
-            115.21166,
             -8.7451
           ],
           [
@@ -21469,9 +21465,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 1152,
+        "point_count": 1151,
         "segment_index": 0,
-        "started_at": "2026-08-25T02:35:00+00:00",
+        "started_at": "2026-08-25T02:53:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -27074,14 +27070,18 @@
           [
             103.81284,
             1.26281
+          ],
+          [
+            103.81284,
+            1.26281
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-24T02:14:00+00:00",
+        "ended_at": "2026-09-24T02:32:56.199241+00:00",
         "name": "ABEONA",
-        "point_count": 88,
+        "point_count": 89,
         "segment_index": 3,
         "started_at": "2026-09-23T09:56:55.106311+00:00",
         "vessel_id": "abeona"
@@ -27092,8 +27092,8 @@
   "properties": {
     "gap_count": 9,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-24T02:45:19.165287+00:00",
-    "public_data_through": "2026-09-24T02:30:19.165287+00:00"
+    "generated_at": "2026-09-24T02:50:19.174490+00:00",
+    "public_data_through": "2026-09-24T02:35:19.174490+00:00"
   },
   "type": "FeatureCollection"
 }
