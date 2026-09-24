@@ -27008,8 +27008,8 @@
   "properties": {
     "gap_count": 9,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-24T12:00:19.171771+00:00",
-    "public_data_through": "2026-09-24T11:45:19.171771+00:00"
+    "generated_at": "2026-09-24T12:05:19.370258+00:00",
+    "public_data_through": "2026-09-24T11:50:19.370258+00:00"
   },
   "type": "FeatureCollection"
 }
