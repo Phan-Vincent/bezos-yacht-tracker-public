@@ -25942,10 +25942,10 @@
     }
   ],
   "properties": {
-    "gap_count": 9,
+    "gap_count": 10,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-27T02:50:19.179103+00:00",
-    "public_data_through": "2026-09-27T02:35:19.179103+00:00"
+    "generated_at": "2026-09-27T02:55:19.179006+00:00",
+    "public_data_through": "2026-09-27T02:40:19.179006+00:00"
   },
   "type": "FeatureCollection"
 }
