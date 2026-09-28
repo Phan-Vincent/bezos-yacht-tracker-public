@@ -3,6 +3,21 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 46,
+        "gap_hours": 102.58440529777778,
+        "site_url": ""
+      },
+      "id": "signal-restored:46",
+      "lat": -34.67707,
+      "lon": 173.82948,
+      "occurred_at": "2026-09-28T07:05:03.859072+00:00",
+      "type": "SIGNAL_RESTORED",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 48,
         "gap_hours": 6.005266575277778,
         "last_observation_at": "2026-09-27T02:37:03.909732+00:00",
@@ -437,7 +452,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-09-28T07:15:19.201248+00:00",
-  "public_data_through": "2026-09-28T07:00:19.201248+00:00",
+  "generated_at": "2026-09-28T07:20:16.622638+00:00",
+  "public_data_through": "2026-09-28T07:05:16.622638+00:00",
   "schema_version": 1
 }
