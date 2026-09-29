@@ -5,10 +5,6 @@
         "coordinates": [
           [
             145.78347,
-            -16.91748
-          ],
-          [
-            145.78347,
             -16.91747
           ],
           [
@@ -11173,9 +11169,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 2791,
+        "point_count": 2790,
         "segment_index": 0,
-        "started_at": "2026-08-30T03:31:00+00:00",
+        "started_at": "2026-08-30T03:46:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -15934,14 +15930,18 @@
           [
             174.75346,
             -36.83883
+          ],
+          [
+            174.75346,
+            -36.83883
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-29T03:22:39.733382+00:00",
+        "ended_at": "2026-09-29T03:34:37.950713+00:00",
         "name": "KORU",
-        "point_count": 156,
+        "point_count": 157,
         "segment_index": 9,
         "started_at": "2026-09-28T17:37:43.029887+00:00",
         "vessel_id": "koru"
@@ -15951,10 +15951,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21166,
-            -8.74512
-          ],
           [
             115.21165,
             -8.74511
@@ -18641,9 +18637,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 671,
+        "point_count": 670,
         "segment_index": 0,
-        "started_at": "2026-08-30T03:32:00+00:00",
+        "started_at": "2026-08-30T03:47:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -25480,8 +25476,8 @@
   "properties": {
     "gap_count": 15,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-29T03:45:19.174321+00:00",
-    "public_data_through": "2026-09-29T03:30:19.174321+00:00"
+    "generated_at": "2026-09-29T03:50:19.174403+00:00",
+    "public_data_through": "2026-09-29T03:35:19.174403+00:00"
   },
   "type": "FeatureCollection"
 }
