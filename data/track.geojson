@@ -4,10 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            145.78346,
-            -16.91748
-          ],
-          [
             145.78345,
             -16.91748
           ],
@@ -11205,9 +11201,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 2799,
+        "point_count": 2798,
         "segment_index": 0,
-        "started_at": "2026-08-30T01:31:00+00:00",
+        "started_at": "2026-08-30T01:46:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -15910,14 +15906,18 @@
           [
             174.75346,
             -36.83884
+          ],
+          [
+            174.75346,
+            -36.83884
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-09-29T01:22:39.410494+00:00",
+        "ended_at": "2026-09-29T01:34:39.905207+00:00",
         "name": "KORU",
-        "point_count": 142,
+        "point_count": 143,
         "segment_index": 9,
         "started_at": "2026-09-28T17:37:43.029887+00:00",
         "vessel_id": "koru"
@@ -15927,10 +15927,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            115.21165,
-            -8.74509
-          ],
           [
             115.21165,
             -8.74509
@@ -18649,9 +18645,9 @@
       "properties": {
         "ended_at": "2026-09-06T04:25:00+00:00",
         "name": "ABEONA",
-        "point_count": 679,
+        "point_count": 678,
         "segment_index": 0,
-        "started_at": "2026-08-30T01:32:00+00:00",
+        "started_at": "2026-08-30T01:44:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -25488,8 +25484,8 @@
   "properties": {
     "gap_count": 15,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-09-29T01:45:19.195663+00:00",
-    "public_data_through": "2026-09-29T01:30:19.195663+00:00"
+    "generated_at": "2026-09-29T01:50:19.210715+00:00",
+    "public_data_through": "2026-09-29T01:35:19.210715+00:00"
   },
   "type": "FeatureCollection"
 }
