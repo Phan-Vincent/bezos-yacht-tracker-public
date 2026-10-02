@@ -4,6 +4,21 @@
       "confidence": 1.0,
       "details": {
         "episode_id": 52,
+        "gap_hours": 23.699893766944445,
+        "site_url": ""
+      },
+      "id": "signal-restored:52",
+      "lat": 1.29911,
+      "lon": 103.69626,
+      "occurred_at": "2026-10-02T09:49:03.900624+00:00",
+      "type": "SIGNAL_RESTORED",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
+        "episode_id": 52,
         "gap_hours": 6.001986641944445,
         "last_observation_at": "2026-10-01T10:07:04.283063+00:00",
         "site_url": ""
@@ -545,22 +560,6 @@
     {
       "confidence": 1.0,
       "details": {
-        "episode_id": 35,
-        "gap_hours": 265.6491039113889,
-        "last_observation_at": "2026-07-17T06:06:00+00:00",
-        "site_url": ""
-      },
-      "id": "signal-gap:35",
-      "lat": -14.80088,
-      "lon": 167.0799,
-      "occurred_at": "2026-07-28T07:44:56.774081+00:00",
-      "type": "SIGNAL_GAP",
-      "vessel_id": "abeona",
-      "vessel_name": "ABEONA"
-    },
-    {
-      "confidence": 1.0,
-      "details": {
         "episode_id": 17,
         "gap_hours": 326.6259748369444,
         "last_observation_at": "2026-07-17T05:20:00+00:00",
@@ -576,7 +575,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-10-02T10:00:07.148492+00:00",
-  "public_data_through": "2026-10-02T09:45:07.148492+00:00",
+  "generated_at": "2026-10-02T10:05:59.155961+00:00",
+  "public_data_through": "2026-10-02T09:50:59.155961+00:00",
   "schema_version": 1
 }

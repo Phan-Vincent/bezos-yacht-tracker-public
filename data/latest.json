@@ -1,13 +1,16 @@
 {
-  "generated_at": "2026-10-02T10:00:07.148492+00:00",
-  "pairing": null,
-  "public_data_through": "2026-10-02T09:45:07.148492+00:00",
+  "generated_at": "2026-10-02T10:05:59.155961+00:00",
+  "pairing": {
+    "distance_nm": 4548.1,
+    "observations_within_hours": 0.0
+  },
+  "public_data_through": "2026-10-02T09:50:59.155961+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-02T09:28:39.042462+00:00",
-      "position_age_minutes": 31.5,
+      "last_accepted_position_at": "2026-10-02T09:49:39.295959+00:00",
+      "position_age_minutes": 16.3,
       "transport_status": "connected"
     }
   },
@@ -16,42 +19,42 @@
   },
   "vessels": [
     {
-      "age_minutes": 31.5,
+      "age_minutes": 16.3,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 305.7,
+        "cog": 269.4,
         "heading": 17.0,
         "lat": -36.83884,
         "lon": 174.75346,
-        "observed_at": "2026-10-02T09:28:39.042462+00:00",
+        "observed_at": "2026-10-02T09:49:39.295959+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 1433.0,
+      "age_minutes": 16.9,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 298.3,
+        "cog": 0.9,
         "heading": 94.0,
-        "lat": 1.29912,
+        "lat": 1.29911,
         "lon": 103.69626,
-        "observed_at": "2026-10-01T10:07:04.283063+00:00",
+        "observed_at": "2026-10-02T09:49:03.900624+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "signal_gap"
+      "status": "current"
     }
   ]
 }
