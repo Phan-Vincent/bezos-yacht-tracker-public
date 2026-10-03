@@ -8,3 +8,6 @@ GitHub Pages should publish the repository root. The collector refreshes
 `data/latest.json`, `data/track.geojson`, `data/events.json`, and
 `data/events.rss` atomically.
 
+## Third-party
+
+Leaflet is bundled under the BSD 2-Clause License; see `LICENSE-leaflet.txt`.
