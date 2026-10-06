@@ -26060,8 +26060,8 @@
   "properties": {
     "gap_count": 29,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-06T07:15:05.232304+00:00",
-    "public_data_through": "2026-10-06T07:00:05.232304+00:00"
+    "generated_at": "2026-10-06T07:20:05.882268+00:00",
+    "public_data_through": "2026-10-06T07:05:05.882268+00:00"
   },
   "type": "FeatureCollection"
 }
