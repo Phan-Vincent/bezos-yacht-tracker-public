@@ -1,13 +1,16 @@
 {
-  "generated_at": "2026-10-06T22:15:09.220427+00:00",
-  "pairing": null,
-  "public_data_through": "2026-10-06T22:00:09.220427+00:00",
+  "generated_at": "2026-10-06T22:20:00.252279+00:00",
+  "pairing": {
+    "distance_nm": 4541.4,
+    "observations_within_hours": 0.0
+  },
+  "public_data_through": "2026-10-06T22:05:00.252279+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-06T21:43:14.917326+00:00",
-      "position_age_minutes": 31.9,
+      "last_accepted_position_at": "2026-10-06T22:02:40.201915+00:00",
+      "position_age_minutes": 17.3,
       "transport_status": "connected"
     }
   },
@@ -16,42 +19,42 @@
   },
   "vessels": [
     {
-      "age_minutes": 31.9,
+      "age_minutes": 18.8,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 356.3,
+        "cog": 282.9,
         "heading": 17.0,
         "lat": -36.83881,
         "lon": 174.75347,
-        "observed_at": "2026-10-06T21:43:14.917326+00:00",
+        "observed_at": "2026-10-06T22:01:14.435859+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 840.5,
+      "age_minutes": 17.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 164.8,
+        "cog": 161.9,
         "heading": 237.0,
-        "lat": 1.26527,
-        "lon": 103.8117,
-        "observed_at": "2026-10-06T08:14:39.680903+00:00",
+        "lat": 1.26526,
+        "lon": 103.81168,
+        "observed_at": "2026-10-06T22:02:40.201915+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "signal_gap"
+      "status": "current"
     }
   ]
 }
