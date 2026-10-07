@@ -20,10 +20,6 @@
             -16.91745
           ],
           [
-            145.78346,
-            -16.91745
-          ],
-          [
             145.78345,
             -16.91745
           ],
@@ -7893,9 +7889,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 1971,
+        "point_count": 1970,
         "segment_index": 0,
-        "started_at": "2026-09-07T17:46:00+00:00",
+        "started_at": "2026-09-07T17:58:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -19330,14 +19326,22 @@
           [
             174.75346,
             -36.83882
+          ],
+          [
+            174.75346,
+            -36.83882
+          ],
+          [
+            174.75346,
+            -36.83882
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-07T17:43:14.163883+00:00",
+        "ended_at": "2026-10-07T17:49:14.152079+00:00",
         "name": "KORU",
-        "point_count": 1407,
+        "point_count": 1409,
         "segment_index": 10,
         "started_at": "2026-09-30T14:28:38.996032+00:00",
         "vessel_id": "koru"
@@ -26562,14 +26566,18 @@
           [
             103.81168,
             1.26527
+          ],
+          [
+            103.81168,
+            1.26527
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-07T17:32:38.852100+00:00",
+        "ended_at": "2026-10-07T17:47:39.717628+00:00",
         "name": "ABEONA",
-        "point_count": 12,
+        "point_count": 13,
         "segment_index": 24,
         "started_at": "2026-10-07T15:23:39.464393+00:00",
         "vessel_id": "abeona"
@@ -26580,8 +26588,8 @@
   "properties": {
     "gap_count": 34,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-07T18:00:07.214882+00:00",
-    "public_data_through": "2026-10-07T17:45:07.214882+00:00"
+    "generated_at": "2026-10-07T18:05:12.722769+00:00",
+    "public_data_through": "2026-10-07T17:50:12.722769+00:00"
   },
   "type": "FeatureCollection"
 }
