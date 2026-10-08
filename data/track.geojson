@@ -27148,8 +27148,8 @@
   "properties": {
     "gap_count": 35,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-08T14:10:08.098690+00:00",
-    "public_data_through": "2026-10-08T13:55:08.098690+00:00"
+    "generated_at": "2026-10-08T14:15:00.729824+00:00",
+    "public_data_through": "2026-10-08T14:00:00.729824+00:00"
   },
   "type": "FeatureCollection"
 }
