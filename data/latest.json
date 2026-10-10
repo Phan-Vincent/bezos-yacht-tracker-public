@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-10T02:30:16.480719+00:00",
+  "generated_at": "2026-10-10T02:35:14.979866+00:00",
   "pairing": {
     "distance_nm": 4541.4,
-    "observations_within_hours": 0.1
+    "observations_within_hours": 0.2
   },
-  "public_data_through": "2026-10-10T02:15:16.480719+00:00",
+  "public_data_through": "2026-10-10T02:20:14.979866+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-10T02:14:38.986035+00:00",
-      "position_age_minutes": 15.6,
+      "last_accepted_position_at": "2026-10-10T02:17:38.847083+00:00",
+      "position_age_minutes": 17.6,
       "transport_status": "connected"
     }
   },
@@ -19,7 +19,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 23.0,
+      "age_minutes": 28.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -38,16 +38,16 @@
       "status": "current"
     },
     {
-      "age_minutes": 15.6,
+      "age_minutes": 17.6,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 142.4,
+        "cog": 90.2,
         "heading": 238.0,
-        "lat": 1.26525,
+        "lat": 1.26526,
         "lon": 103.81167,
-        "observed_at": "2026-10-10T02:14:38.986035+00:00",
+        "observed_at": "2026-10-10T02:17:38.847083+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
