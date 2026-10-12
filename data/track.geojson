@@ -29,10 +29,6 @@
           ],
           [
             145.78345,
-            -16.91745
-          ],
-          [
-            145.78345,
             -16.91746
           ],
           [
@@ -3109,9 +3105,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 775,
+        "point_count": 774,
         "segment_index": 0,
-        "started_at": "2026-09-12T07:28:00+00:00",
+        "started_at": "2026-09-12T07:34:09.025671+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -17390,14 +17386,18 @@
           [
             174.75346,
             -36.83881
+          ],
+          [
+            174.75346,
+            -36.83881
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-12T07:25:13.677184+00:00",
+        "ended_at": "2026-10-12T07:28:13.384025+00:00",
         "name": "KORU",
-        "point_count": 24,
+        "point_count": 25,
         "segment_index": 11,
         "started_at": "2026-10-12T05:07:14.916612+00:00",
         "vessel_id": "koru"
@@ -24724,8 +24724,8 @@
   "properties": {
     "gap_count": 48,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-12T07:40:16.758052+00:00",
-    "public_data_through": "2026-10-12T07:25:16.758052+00:00"
+    "generated_at": "2026-10-12T07:45:16.625968+00:00",
+    "public_data_through": "2026-10-12T07:30:16.625968+00:00"
   },
   "type": "FeatureCollection"
 }
