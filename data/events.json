@@ -4,6 +4,21 @@
       "confidence": 1.0,
       "details": {
         "episode_id": 54,
+        "gap_hours": 6.649953829166666,
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/"
+      },
+      "id": "signal-restored:54",
+      "lat": -36.83881,
+      "lon": 174.75346,
+      "occurred_at": "2026-10-12T05:07:14.916612+00:00",
+      "type": "SIGNAL_RESTORED",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
+        "episode_id": 54,
         "gap_hours": 6.462070589722222,
         "last_observation_at": "2026-10-11T22:28:15.082827+00:00",
         "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/"
@@ -591,7 +606,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-10-12T05:20:21.070332+00:00",
-  "public_data_through": "2026-10-12T05:05:21.070332+00:00",
+  "generated_at": "2026-10-12T05:25:10.975525+00:00",
+  "public_data_through": "2026-10-12T05:10:10.975525+00:00",
   "schema_version": 1
 }
