@@ -118,6 +118,56 @@ function headingItem(latest) {
   return wrapper;
 }
 
+function placeLabel(place) {
+  if (!place) return "";
+  const name = place.country && place.country !== place.name
+    ? `${place.name}, ${place.country}`
+    : place.name;
+  return place.relation === "in_port"
+    ? `In port · ${name}`
+    : `Near ${name} · ${place.distance_nm} nm`;
+}
+
+function localTimeLabel(timezone) {
+  try {
+    const time = new Intl.DateTimeFormat([], {
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone: timezone.name,
+      timeZoneName: "short"
+    }).format(new Date());
+    return timezone.basis === "nautical" ? `${time} (nautical zone)` : time;
+  } catch {
+    return "";
+  }
+}
+
+// Place and time zone come from the collector; older bundles lack them.
+function placeLine(vessel) {
+  if (!vessel.place && !vessel.timezone?.name) return null;
+  const line = node("p", "place-line");
+  const place = placeLabel(vessel.place);
+  if (place) line.append(node("span", "place-name", place));
+  if (vessel.timezone?.name) {
+    const time = node("span", "local-time");
+    time.dataset.timezone = vessel.timezone.name;
+    time.dataset.basis = vessel.timezone.basis || "";
+    time.textContent = `Local time ${localTimeLabel(vessel.timezone)}`;
+    line.append(time);
+  }
+  return line;
+}
+
+function refreshLocalTimes() {
+  document.querySelectorAll(".local-time").forEach((element) => {
+    const label = localTimeLabel({
+      name: element.dataset.timezone,
+      basis: element.dataset.basis
+    });
+    element.textContent = `Local time ${label}`;
+  });
+}
+
 function specsFor(vessel) {
   const specs = [...(VESSEL_SPECS[vessel.id] || [])];
   const flag = FLAGS_BY_MID[String(vessel.mmsi || "").slice(0, 3)];
@@ -164,7 +214,13 @@ function renderVessels(payload) {
       headingItem(latest),
       metaItem("Source", latest?.source ?? "—")
     );
-    card.append(top, node("p", "coordinates", coordinates), meta, specsFor(vessel));
+    card.append(
+      top,
+      node("p", "coordinates", coordinates),
+      ...[placeLine(vessel)].filter(Boolean),
+      meta,
+      specsFor(vessel)
+    );
     return card;
   });
   container.replaceChildren(...cards);
@@ -465,3 +521,4 @@ document.querySelectorAll(".timeline-filter button").forEach((button) => {
 });
 boot();
 window.setInterval(boot, REFRESH_MS);
+window.setInterval(refreshLocalTimes, 30 * 1000);

@@ -55,7 +55,10 @@ main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
 .status-pill.stale { background: #fff0bf; color: #644b00; }
 .status-pill.signal_gap { background: #ffe0d7; color: #8c2e19; }
 .status-pill.source_unavailable { background: #e3e3e3; color: #4b5552; }
-.coordinates { margin: auto 0 12px; font: 500 clamp(1.35rem, 3vw, 2.2rem)/1.2 ui-monospace, monospace; }
+.coordinates { margin: auto 0 8px; font: 500 clamp(1.35rem, 3vw, 2.2rem)/1.2 ui-monospace, monospace; }
+.place-line { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 18px; color: #3d4b47; font-size: .9rem; }
+.place-name { font-weight: 600; }
+.local-time { color: var(--muted); }
 .vessel-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding-top: 24px; border-top: 1px solid var(--line); }
 .vessel-meta dt { color: var(--muted); font: .66rem ui-monospace, monospace; text-transform: uppercase; }
 .vessel-meta dd { margin: 7px 0 0; font-size: .92rem; }
@@ -87,15 +90,20 @@ main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
 .trace-stat dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 0; }
 .trace-stat dt { color: #a8bbb6; font: .66rem ui-monospace, monospace; text-transform: uppercase; }
 .trace-stat dd { margin: 6px 0 0; font: 500 1.35rem ui-monospace, monospace; }
-.timeline-filter { display: flex; gap: 10px; margin-bottom: 26px; }
-.timeline-filter button { padding: 9px 16px; border: 1px solid var(--line); border-radius: 99px; color: var(--ink); background: transparent; font: 700 .72rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.timeline-filter { display: flex; gap: 8px; margin-bottom: 18px; }
+.timeline-filter button { padding: 6px 12px; border: 1px solid var(--line); border-radius: 99px; color: var(--ink); background: transparent; font: 700 .64rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
 .timeline-filter button[aria-pressed="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
 .timeline-filter button:focus-visible { outline: 3px solid var(--aqua); outline-offset: 3px; }
-.timeline-section { background: #e8e3d7; }
-.timeline { border-top: 1px solid var(--line); }
-.event { display: grid; grid-template-columns: 150px 1fr auto; gap: 28px; padding: 28px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
-.event time, .event-type { color: var(--muted); font: .72rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
-.event h3 { margin: 0; font: 400 1.45rem Georgia, serif; }
+/* The event log runs at two-thirds the scale of the other sections and scrolls. */
+main section.timeline-section { padding-top: clamp(48px, 6.7vw, 94px); padding-bottom: clamp(48px, 6.7vw, 94px); background: #e8e3d7; }
+.timeline-section .section-heading { margin-bottom: 34px; }
+.timeline-section h2 { font-size: clamp(1.75rem, 4vw, 3.35rem); }
+.timeline { max-height: clamp(260px, 60vh, 430px); overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.timeline:focus-visible { outline: 3px solid var(--aqua); outline-offset: 4px; }
+.event { display: grid; grid-template-columns: 110px 1fr auto; gap: 18px; padding: 16px 4px 16px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.event:last-child { border-bottom: 0; }
+.event time, .event-type { color: var(--muted); font: .64rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
+.event h3 { margin: 0; font: 400 1rem Georgia, serif; }
 .method-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: clamp(50px, 8vw, 130px); }
 .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
 .method-grid article { padding-top: 18px; border-top: 1px solid var(--line); }
@@ -112,6 +120,6 @@ footer p { max-width: 650px; }
   .section-heading, .map-heading, .trace-stats-heading { display: block; }
   .trace-stats { grid-template-columns: 1fr; }
   .map-heading > p { margin-top: 22px; }
-  .event { grid-template-columns: 1fr; gap: 9px; }
+  .event { grid-template-columns: 1fr; gap: 6px; }
   footer { display: block; }
 }
