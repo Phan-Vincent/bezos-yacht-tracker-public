@@ -1,4 +1,6 @@
 const COLORS = { koru: "#ff7c5c", abeona: "#62d7c8" };
+// Dashes give the support vessel a non-color cue; matches the legend swatch.
+const DASHES = { abeona: "10 8" };
 const REFRESH_MS = 5 * 60 * 1000;
 const STATUS_LABELS = {
   current: "Current",
@@ -9,6 +11,10 @@ const STATUS_LABELS = {
 };
 
 let mapInstance = null;
+let trackLayer = null;
+const vesselMarkers = new Map();
+let hasFittedMap = false;
+let hasRendered = false;
 
 function ageLabel(minutes) {
   if (!Number.isFinite(minutes)) return "unknown";
@@ -122,13 +128,31 @@ function renderEvents(payload) {
   container.replaceChildren(...eventNodes);
 }
 
-function renderMap(track, latest) {
-  if (mapInstance) mapInstance.remove();
+function ensureMap() {
+  if (mapInstance) return;
   mapInstance = L.map("map", { scrollWheelZoom: false }).setView([15, 0], 2);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: "&copy; OpenStreetMap contributors"
   }).addTo(mapInstance);
+  // Markers live above the tracks even though tracks are redrawn on every refresh.
+  mapInstance.createPane("vessels").style.zIndex = 450;
+  trackLayer = L.layerGroup().addTo(mapInstance);
+}
+
+function markerPopup(vessel) {
+  const popup = document.createElement("div");
+  const name = document.createElement("strong");
+  name.textContent = vessel.name;
+  popup.append(name, document.createElement("br"), document.createTextNode(statusLabel(vessel.status)));
+  return popup;
+}
+
+// The map is built once; refreshes update it in place so a reader's zoom,
+// pan and open popup survive the five-minute reload.
+function renderMap(track, latest) {
+  ensureMap();
+  trackLayer.clearLayers();
 
   const bounds = [];
   const segmentCounts = {};
@@ -138,31 +162,53 @@ function renderMap(track, latest) {
     if (coordinates.length) {
       L.polyline(coordinates, {
         color: COLORS[id] || "#ffffff",
+        dashArray: DASHES[id],
         weight: 4,
         opacity: 0.9
-      }).addTo(mapInstance);
+      }).addTo(trackLayer);
       bounds.push(...coordinates);
       segmentCounts[id] = (segmentCounts[id] || 0) + 1;
     }
   });
 
+  const shown = new Set();
   latest.vessels.forEach((vessel) => {
     if (!vessel.latest) return;
     const point = [vessel.latest.lat, vessel.latest.lon];
-    const popup = document.createElement("div");
-    const name = document.createElement("strong");
-    name.textContent = vessel.name;
-    popup.append(name, document.createElement("br"), document.createTextNode(statusLabel(vessel.status)));
-    L.circleMarker(point, {
-      radius: 8,
-      color: "#071c22",
-      weight: 3,
-      fillColor: COLORS[vessel.id] || "#ffffff",
-      fillOpacity: 1
-    }).bindPopup(popup).addTo(mapInstance);
+    let marker = vesselMarkers.get(vessel.id);
+    if (marker) {
+      marker.setLatLng(point).setPopupContent(markerPopup(vessel));
+    } else {
+      marker = L.circleMarker(point, {
+        pane: "vessels",
+        radius: 8,
+        color: "#071c22",
+        weight: 3,
+        fillColor: COLORS[vessel.id] || "#ffffff",
+        fillOpacity: 1
+      })
+        .bindPopup(markerPopup(vessel))
+        .bindTooltip(vessel.name, {
+          permanent: true,
+          direction: "right",
+          offset: [10, 0],
+          className: "vessel-label"
+        })
+        .addTo(mapInstance);
+      vesselMarkers.set(vessel.id, marker);
+    }
+    shown.add(vessel.id);
     bounds.push(point);
   });
-  if (bounds.length) mapInstance.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 });
+  vesselMarkers.forEach((marker, id) => {
+    if (shown.has(id)) return;
+    marker.remove();
+    vesselMarkers.delete(id);
+  });
+  if (!hasFittedMap && bounds.length) {
+    mapInstance.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 });
+    hasFittedMap = true;
+  }
 
   const breaks = track.properties?.gap_count ?? Object.values(segmentCounts).reduce(
     (total, count) => total + Math.max(0, count - 1),
@@ -210,7 +256,15 @@ async function boot() {
     renderVessels(latest);
     renderEvents(events);
     renderMap(track, latest);
+    hasRendered = true;
   } catch (error) {
+    document.querySelector("#source-dot").classList.remove("healthy");
+    if (hasRendered) {
+      // Keep the last good snapshot on screen; its "data through" time still applies.
+      document.querySelector("#source-health").textContent =
+        "REFRESH FAILED · SHOWING LAST LOADED SNAPSHOT";
+      return;
+    }
     document.querySelector("#source-health").textContent = "PUBLIC DATA UNAVAILABLE";
     const unavailable = node("article", "vessel-card");
     unavailable.append(
