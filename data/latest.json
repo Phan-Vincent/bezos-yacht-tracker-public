@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-13T04:40:13.003810+00:00",
+  "generated_at": "2026-10-13T04:45:20.012283+00:00",
   "pairing": {
-    "distance_nm": 4541.5,
-    "observations_within_hours": 0.3
+    "distance_nm": 4541.3,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-10-13T04:25:13.003810+00:00",
+  "public_data_through": "2026-10-13T04:30:20.012283+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-13T04:17:39.878477+00:00",
-      "position_age_minutes": 22.6,
+      "last_accepted_position_at": "2026-10-13T04:28:22.663500+00:00",
+      "position_age_minutes": 17.0,
       "transport_status": "connected"
     }
   },
@@ -19,36 +19,36 @@
   },
   "vessels": [
     {
-      "age_minutes": 39.0,
+      "age_minutes": 17.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 256.7,
+        "cog": 262.4,
         "heading": 17.0,
         "lat": -36.83881,
         "lon": 174.75347,
-        "observed_at": "2026-10-13T04:01:14.686210+00:00",
+        "observed_at": "2026-10-13T04:28:13.620290+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 22.6,
+      "age_minutes": 17.0,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 259.4,
-        "heading": 258.0,
-        "lat": 1.26433,
-        "lon": 103.80944,
-        "observed_at": "2026-10-13T04:17:39.878477+00:00",
-        "sog": 1.5,
+        "cog": 58.7,
+        "heading": 265.0,
+        "lat": 1.26253,
+        "lon": 103.81182,
+        "observed_at": "2026-10-13T04:28:22.663500+00:00",
+        "sog": 0.6,
         "source": "aisstream"
       },
       "mmsi": "319225500",
