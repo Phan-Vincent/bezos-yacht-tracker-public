@@ -13,10 +13,6 @@
           ],
           [
             145.78346,
-            -16.91745
-          ],
-          [
-            145.78346,
             -16.91746
           ],
           [
@@ -1997,9 +1993,9 @@
       "properties": {
         "ended_at": "2026-09-14T05:06:03.636720+00:00",
         "name": "KORU",
-        "point_count": 497,
+        "point_count": 496,
         "segment_index": 0,
-        "started_at": "2026-09-13T02:13:00+00:00",
+        "started_at": "2026-09-13T02:19:07.271273+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -16724,10 +16720,6 @@
             1.26282
           ],
           [
-            103.81284,
-            1.26282
-          ],
-          [
             103.81285,
             1.26282
           ],
@@ -20389,9 +20381,9 @@
       "properties": {
         "ended_at": "2026-09-22T22:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 916,
+        "point_count": 915,
         "segment_index": 0,
-        "started_at": "2026-09-13T02:14:00+00:00",
+        "started_at": "2026-09-13T02:23:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -23948,8 +23940,8 @@
   "properties": {
     "gap_count": 52,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-13T02:25:18.998399+00:00",
-    "public_data_through": "2026-10-13T02:10:18.998399+00:00"
+    "generated_at": "2026-10-13T02:30:07.277347+00:00",
+    "public_data_through": "2026-10-13T02:15:07.277347+00:00"
   },
   "type": "FeatureCollection"
 }
