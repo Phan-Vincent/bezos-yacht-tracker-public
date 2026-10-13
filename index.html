@@ -6,11 +6,11 @@
     <meta name="description" content="A delayed, source-transparent public AIS tracker for Koru and support vessel Abeona.">
     <meta name="theme-color" content="#071c22">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bezos Maritime Tracker">
+    <meta property="og:title" content="Jeff Bezos Yacht Tracker">
     <meta property="og:description" content="Verified public AIS tracking for Koru and Abeona, published with a 15-minute delay.">
     <meta property="og:image" content="og.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bezos Maritime Tracker">
+    <meta name="twitter:title" content="Jeff Bezos Yacht Tracker">
     <meta name="twitter:description" content="Verified public AIS tracking for Koru and Abeona, published with a 15-minute delay.">
     <meta name="twitter:image" content="og.png">
     <title>Bezos Maritime Tracker</title>
@@ -20,7 +20,7 @@
   <body>
     <header class="hero">
       <nav>
-        <a class="brand" href="/">BEZOS MARITIME TRACKER</a>
+        <a class="brand" href="./">JEFF BEZOS YACHT TRACKER</a>
         <div class="nav-links">
           <a href="#fleet">Fleet</a>
           <a href="#timeline">Timeline</a>
@@ -69,12 +69,22 @@
           <li><span class="legend-line abeona"></span>Abeona · support vessel</li>
         </ul>
         <div id="map" role="region" aria-label="Map of verified vessel tracks"></div>
+        <div class="trace-stats-heading">
+          <p class="eyebrow">LAST 30 DAYS</p>
+          <p>Distance counts only verified track, so it misses any passage made during a signal gap. Coverage is the share of the window with fixes no more than 90 minutes apart.</p>
+        </div>
+        <div id="trace-stats" class="trace-stats" aria-live="polite"></div>
       </section>
 
       <section id="timeline" class="timeline-section">
         <div class="section-heading">
           <p class="eyebrow">EVENT LOG</p>
           <h2>What changed</h2>
+        </div>
+        <div class="timeline-filter" role="group" aria-label="Filter events by vessel">
+          <button type="button" data-vessel="all" aria-pressed="true">All</button>
+          <button type="button" data-vessel="koru" aria-pressed="false">Koru</button>
+          <button type="button" data-vessel="abeona" aria-pressed="false">Abeona</button>
         </div>
         <div id="events" class="timeline" aria-live="polite"></div>
       </section>

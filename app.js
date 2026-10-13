@@ -9,12 +9,29 @@ const STATUS_LABELS = {
   source_unavailable: "Source unavailable",
   no_verified_fix: "No verified fix"
 };
+const NM_PER_RADIAN = 3440.065;
+// Below this speed a fix reads as stationary; AIS speed jitters around zero at a mooring.
+const STATIONARY_KN = 0.5;
+// Fixes closer than this to the last counted point are position noise, not travel.
+const MIN_HOP_NM = 0.05;
+const TRACE_DAYS = 30;
+const COMPASS_POINTS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+// AIS MMSI prefixes (maritime identification digits) for the flags in use.
+const FLAGS_BY_MID = { "319": "Cayman Islands" };
+// From builder announcements and trade press, not from AIS.
+const VESSEL_SPECS = {
+  koru: [["Type", "Three-masted schooner"], ["Length", "127 m"], ["Built", "Oceanco · 2023"]],
+  abeona: [["Type", "Support vessel · helipad"], ["Length", "75 m"], ["Built", "Damen Yachting · 2023"]]
+};
 
 let mapInstance = null;
 let trackLayer = null;
 const vesselMarkers = new Map();
 let hasFittedMap = false;
 let hasRendered = false;
+let lastEvents = null;
+let lastStatuses = {};
+let eventFilter = "all";
 
 function ageLabel(minutes) {
   if (!Number.isFinite(minutes)) return "unknown";
@@ -38,6 +55,77 @@ function node(tag, className, text) {
 
 function statusLabel(status) {
   return STATUS_LABELS[status] || String(status || "unknown").replaceAll("_", " ");
+}
+
+function utcLabel(iso) {
+  return `${new Date(iso).toLocaleString([], {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "UTC"
+  })} UTC`;
+}
+
+function hoursLabel(hours) {
+  if (!Number.isFinite(hours)) return "an unknown time";
+  if (hours < 1) return `${Math.round(hours * 60)}m`;
+  if (hours < 48) return `${hours.toFixed(1)}h`;
+  return `${(hours / 24).toFixed(1)} days`;
+}
+
+function nauticalMiles(value) {
+  return `${Math.round(value).toLocaleString("en-US")} nm`;
+}
+
+function distanceNm([lat1, lon1], [lat2, lon2]) {
+  const toRad = (degrees) => (degrees * Math.PI) / 180;
+  const a =
+    Math.sin(toRad(lat2 - lat1) / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(toRad(lon2 - lon1) / 2) ** 2;
+  return 2 * NM_PER_RADIAN * Math.asin(Math.min(1, Math.sqrt(a)));
+}
+
+function isUnderway(latest) {
+  return Number.isFinite(latest?.sog) && latest.sog >= STATIONARY_KN;
+}
+
+function motionLabel(latest) {
+  if (!Number.isFinite(latest?.sog)) return "—";
+  return isUnderway(latest) ? `Underway · ${latest.sog.toFixed(1)} kn` : "Stationary";
+}
+
+// AIS sends 511 for "no heading" and 360 for "no course". Course over ground
+// is only meaningful while moving, so it is the fallback for underway fixes only.
+function bearingOf(latest) {
+  if (Number.isFinite(latest?.heading) && latest.heading < 360) return latest.heading;
+  if (isUnderway(latest) && Number.isFinite(latest.cog) && latest.cog < 360) return latest.cog;
+  return null;
+}
+
+function headingItem(latest) {
+  const wrapper = document.createElement("div");
+  const value = node("dd", "");
+  const degrees = bearingOf(latest);
+  if (degrees == null) {
+    value.textContent = "—";
+  } else {
+    const arrow = node("span", "heading-arrow", "↑");
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.style.transform = `rotate(${degrees}deg)`;
+    const point = COMPASS_POINTS[Math.round(degrees / 45) % 8];
+    value.append(arrow, `${Math.round(degrees)}° ${point}`);
+  }
+  wrapper.append(node("dt", "", "Heading"), value);
+  return wrapper;
+}
+
+function specsFor(vessel) {
+  const specs = [...(VESSEL_SPECS[vessel.id] || [])];
+  const flag = FLAGS_BY_MID[String(vessel.mmsi || "").slice(0, 3)];
+  if (flag) specs.push(["Flag", flag]);
+  if (vessel.imo) specs.push(["IMO", vessel.imo]);
+  const list = node("dl", "vessel-specs");
+  specs.forEach(([label, value]) => list.append(metaItem(label, value)));
+  return list;
 }
 
 function metaItem(label, value) {
@@ -72,68 +160,164 @@ function renderVessels(payload) {
     const meta = node("dl", "vessel-meta");
     meta.append(
       metaItem("Fix age", ageLabel(vessel.age_minutes)),
-      metaItem("Speed", latest?.sog == null ? "—" : `${latest.sog} kn`),
+      metaItem("Motion", motionLabel(latest)),
+      headingItem(latest),
       metaItem("Source", latest?.source ?? "—")
     );
-    card.append(top, node("p", "coordinates", coordinates), meta);
+    card.append(top, node("p", "coordinates", coordinates), meta, specsFor(vessel));
     return card;
   });
   container.replaceChildren(...cards);
 
   const pairing = document.querySelector("#pairing");
+  const located = payload.vessels.filter((vessel) => vessel.latest);
   if (payload.pairing) {
     pairing.hidden = false;
     pairing.textContent = `KORU ↔ ABEONA · ${payload.pairing.distance_nm} nautical miles apart · observations ${payload.pairing.observations_within_hours}h apart`;
+  } else if (located.length === 2) {
+    // The collector only pairs fixes taken close together in time; otherwise
+    // compare the last verified fixes and say how far apart in time they are.
+    const [first, second] = located;
+    const miles = distanceNm(
+      [first.latest.lat, first.latest.lon],
+      [second.latest.lat, second.latest.lon]
+    );
+    const hoursApart =
+      Math.abs(new Date(first.latest.observed_at) - new Date(second.latest.observed_at)) / 3.6e6;
+    pairing.hidden = false;
+    pairing.textContent =
+      `${first.name} ↔ ${second.name} · about ${nauticalMiles(miles)} apart` +
+      (hoursApart >= 1 ? ` · last fixes ${hoursLabel(hoursApart)} apart` : "");
   } else {
     pairing.hidden = true;
     pairing.textContent = "";
   }
 }
 
-function renderEvents(payload) {
+// One timeline row per signal-gap episode: a resolved gap shows as its
+// restore event with the total length; an unresolved gap stays as the gap.
+function timelineEntries(events, statuses) {
+  const episodeKey = (event) => `${event.vessel_id}:${event.details?.episode_id}`;
+  const restored = new Set(
+    events.filter((event) => event.type === "SIGNAL_RESTORED").map(episodeKey)
+  );
+  return events.flatMap((event) => {
+    if (event.type === "SIGNAL_RESTORED") {
+      return [{
+        event,
+        title: `${event.vessel_name} · signal back after ${hoursLabel(event.details?.gap_hours)}`,
+        tag: "Signal gap · resolved"
+      }];
+    }
+    if (event.type === "SIGNAL_GAP") {
+      if (event.details?.episode_id != null && restored.has(episodeKey(event))) return [];
+      const since = event.details?.last_observation_at;
+      const ongoing = statuses[event.vessel_id] === "signal_gap";
+      return [{
+        event,
+        title: since
+          ? `${event.vessel_name} · no signal since ${utcLabel(since)}`
+          : `${event.vessel_name} · signal gap`,
+        tag: ongoing ? "Signal gap · ongoing" : "Signal gap"
+      }];
+    }
+    return [{
+      event,
+      title: event.details?.port
+        ? `${event.vessel_name} · ${event.details.port}`
+        : `${event.vessel_name} · ${String(event.type).replaceAll("_", " ").toLowerCase()}`,
+      tag: String(event.type).replaceAll("_", " ")
+    }];
+  });
+}
+
+function renderEvents(payload, statuses) {
   const container = document.querySelector("#events");
-  if (!payload.events.length) {
+  const entries = timelineEntries(payload.events, statuses).filter(
+    ({ event }) => eventFilter === "all" || event.vessel_id === eventFilter
+  );
+  if (!entries.length) {
     const empty = node("article", "event");
     empty.append(
       node("span", "event-type", "No public events yet"),
-      node("h3", "", "The timeline begins with the next verified transition.")
+      node(
+        "h3",
+        "",
+        payload.events.length
+          ? "No events for this vessel in the public window."
+          : "The timeline begins with the next verified transition."
+      )
     );
     container.replaceChildren(empty);
     return;
   }
 
-  const eventNodes = payload.events.map((event) => {
-    const date = new Date(event.occurred_at);
-    const title = event.details?.port
-      ? `${event.vessel_name} · ${event.details.port}`
-      : `${event.vessel_name} · ${String(event.type).replaceAll("_", " ").toLowerCase()}`;
+  const eventNodes = entries.map(({ event, title, tag }) => {
     const article = node("article", "event");
-    const time = node(
-      "time",
-      "",
-      `${date.toLocaleString([], {
-        dateStyle: "medium",
-        timeStyle: "short",
-        timeZone: "UTC"
-      })} UTC`
-    );
+    const time = node("time", "", utcLabel(event.occurred_at));
     time.dateTime = event.occurred_at;
-    article.append(
-      time,
-      node("h3", "", title),
-      node("span", "event-type", String(event.type).replaceAll("_", " "))
-    );
+    article.append(time, node("h3", "", title), node("span", "event-type", tag));
     return article;
   });
   container.replaceChildren(...eventNodes);
 }
 
+function setEventFilter(vesselId) {
+  eventFilter = vesselId;
+  document.querySelectorAll(".timeline-filter button").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.vessel === vesselId));
+  });
+  if (lastEvents) renderEvents(lastEvents, lastStatuses);
+}
+
+// Distance counts only movement along verified segments, so it undercounts
+// any passage made during a signal gap; coverage says how much that is.
+function traceStats(track) {
+  const stats = {};
+  track.features.forEach((feature) => {
+    const { vessel_id: id, started_at: startedAt, ended_at: endedAt } = feature.properties;
+    const entry = (stats[id] ||= { name: feature.properties.name || id, miles: 0, coveredMs: 0 });
+    if (startedAt && endedAt) entry.coveredMs += new Date(endedAt) - new Date(startedAt);
+    let anchor = null;
+    feature.geometry.coordinates.forEach(([lon, lat]) => {
+      if (!anchor) {
+        anchor = [lat, lon];
+        return;
+      }
+      const hop = distanceNm(anchor, [lat, lon]);
+      if (hop >= MIN_HOP_NM) {
+        entry.miles += hop;
+        anchor = [lat, lon];
+      }
+    });
+  });
+  return stats;
+}
+
+function renderStats(track) {
+  const windowMs = TRACE_DAYS * 24 * 3.6e6;
+  const items = Object.entries(traceStats(track)).map(([id, entry]) => {
+    const item = node("article", `trace-stat ${id}`);
+    const coverage = Math.min(100, Math.round((entry.coveredMs / windowMs) * 100));
+    const facts = node("dl", "");
+    facts.append(
+      metaItem("Verified distance", nauticalMiles(entry.miles)),
+      metaItem("AIS coverage", `${coverage}%`)
+    );
+    item.append(node("h3", "", entry.name), facts);
+    return item;
+  });
+  document.querySelector("#trace-stats").replaceChildren(...items);
+}
+
 function ensureMap() {
   if (mapInstance) return;
   mapInstance = L.map("map", { scrollWheelZoom: false }).setView([15, 0], 2);
+  // Standard OSM tiles, darkened in CSS (.dark-tiles) to match the page.
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
-    attribution: "&copy; OpenStreetMap contributors"
+    className: "dark-tiles",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(mapInstance);
   // Markers live above the tracks even though tracks are redrawn on every refresh.
   mapInstance.createPane("vessels").style.zIndex = 450;
@@ -182,8 +366,8 @@ function renderMap(track, latest) {
       marker = L.circleMarker(point, {
         pane: "vessels",
         radius: 8,
-        color: "#071c22",
-        weight: 3,
+        color: "#f3efe5",
+        weight: 2,
         fillColor: COLORS[vessel.id] || "#ffffff",
         fillOpacity: 1
       })
@@ -248,14 +432,13 @@ async function boot() {
     document.querySelector("#source-health").textContent =
       `AISSTREAM LINK ${connected ? "CONNECTED" : "UNAVAILABLE"}${recency}`;
     document.querySelector("#data-through").textContent =
-      `PUBLIC DATA THROUGH ${new Date(latest.public_data_through).toLocaleString([], {
-        dateStyle: "medium",
-        timeStyle: "short",
-        timeZone: "UTC"
-      })} UTC`;
+      `PUBLIC DATA THROUGH ${utcLabel(latest.public_data_through)}`;
     renderVessels(latest);
-    renderEvents(events);
+    lastEvents = events;
+    lastStatuses = Object.fromEntries(latest.vessels.map((vessel) => [vessel.id, vessel.status]));
+    renderEvents(events, lastStatuses);
     renderMap(track, latest);
+    renderStats(track);
     hasRendered = true;
   } catch (error) {
     document.querySelector("#source-dot").classList.remove("healthy");
@@ -277,5 +460,8 @@ async function boot() {
   }
 }
 
+document.querySelectorAll(".timeline-filter button").forEach((button) => {
+  button.addEventListener("click", () => setEventFilter(button.dataset.vessel));
+});
 boot();
 window.setInterval(boot, REFRESH_MS);
