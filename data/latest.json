@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-13T20:25:08.721143+00:00",
+  "generated_at": "2026-10-13T20:30:18.508887+00:00",
   "pairing": null,
-  "public_data_through": "2026-10-13T20:10:08.721143+00:00",
+  "public_data_through": "2026-10-13T20:15:18.508887+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-10-13T20:04:14.777259+00:00",
-      "position_age_minutes": 20.9,
+      "position_age_minutes": 26.1,
       "transport_status": "connected"
     }
   },
@@ -16,7 +16,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 20.9,
+      "age_minutes": 26.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -31,11 +31,21 @@
       },
       "mmsi": "319225400",
       "name": "KORU",
+      "place": {
+        "country": "New Zealand",
+        "distance_nm": 0.4,
+        "name": "Auckland",
+        "relation": "in_port"
+      },
       "role": "primary_yacht",
-      "status": "current"
+      "status": "current",
+      "timezone": {
+        "basis": "place",
+        "name": "Pacific/Auckland"
+      }
     },
     {
-      "age_minutes": 701.8,
+      "age_minutes": 707.0,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
@@ -50,8 +60,18 @@
       },
       "mmsi": "319225500",
       "name": "ABEONA",
+      "place": {
+        "country": "Singapore",
+        "distance_nm": 2.0,
+        "name": "Singapore",
+        "relation": "in_port"
+      },
       "role": "support_vessel",
-      "status": "signal_gap"
+      "status": "signal_gap",
+      "timezone": {
+        "basis": "place",
+        "name": "Asia/Singapore"
+      }
     }
   ]
 }
