@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-13T17:30:18.544277+00:00",
+  "generated_at": "2026-10-13T17:35:15.008007+00:00",
   "pairing": null,
-  "public_data_through": "2026-10-13T17:15:18.544277+00:00",
+  "public_data_through": "2026-10-13T17:20:15.008007+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-10-13T16:58:13.347263+00:00",
-      "position_age_minutes": 32.1,
+      "position_age_minutes": 37.0,
       "transport_status": "connected"
     }
   },
@@ -16,7 +16,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 32.1,
+      "age_minutes": 37.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -35,7 +35,7 @@
       "status": "stale"
     },
     {
-      "age_minutes": 527.0,
+      "age_minutes": 531.9,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
