@@ -173,6 +173,25 @@
     {
       "confidence": 1.0,
       "details": {
+        "backfilled": true,
+        "last_seen_outside_at": "2026-09-28T20:49:01.737090+00:00",
+        "lat": -36.836218333333335,
+        "lon": 174.80625,
+        "port": "Auckland",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 9.6
+      },
+      "id": "arrival:koru:Auckland:2026-09-28T20:52:12.294150+00:00",
+      "lat": -36.83622,
+      "lon": 174.80625,
+      "occurred_at": "2026-09-28T20:52:12.294150+00:00",
+      "type": "ARRIVAL",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 49,
         "gap_hours": 6.004632935,
         "last_observation_at": "2026-09-28T09:49:03.053090+00:00",
@@ -406,6 +425,44 @@
     {
       "confidence": 1.0,
       "details": {
+        "backfilled": true,
+        "last_seen_in_port_at": "2026-09-13T23:35:55.336809+00:00",
+        "lat": -16.858988333333333,
+        "lon": 145.81593999999998,
+        "port": "Cairns",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 13.4
+      },
+      "id": "departure:koru:Cairns:2026-09-13T23:40:56.373655+00:00",
+      "lat": -16.85899,
+      "lon": 145.81594,
+      "occurred_at": "2026-09-13T23:40:56.373655+00:00",
+      "type": "DEPARTURE",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
+        "backfilled": true,
+        "last_seen_outside_at": "2026-09-09T03:35:00+00:00",
+        "lat": 1.22398,
+        "lon": 103.89759,
+        "port": "Singapore",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 5.1
+      },
+      "id": "arrival:abeona:Singapore:2026-09-09T04:05:00+00:00",
+      "lat": 1.22398,
+      "lon": 103.89759,
+      "occurred_at": "2026-09-09T04:05:00+00:00",
+      "type": "ARRIVAL",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 41,
         "gap_hours": 50.36666666666667,
         "site_url": ""
@@ -530,17 +587,21 @@
     {
       "confidence": 1.0,
       "details": {
-        "episode_id": 37,
-        "gap_hours": 191.19420365222223,
-        "site_url": ""
+        "backfilled": true,
+        "last_seen_outside_at": "2026-08-17T02:27:00+00:00",
+        "lat": -16.91434,
+        "lon": 145.78493,
+        "port": "Cairns",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 7.7
       },
-      "id": "signal-restored:37",
-      "lat": -8.93605,
-      "lon": 130.86758,
-      "occurred_at": "2026-08-17T11:56:00+00:00",
-      "type": "SIGNAL_RESTORED",
-      "vessel_id": "abeona",
-      "vessel_name": "ABEONA"
+      "id": "arrival:koru:Cairns:2026-08-17T02:56:00+00:00",
+      "lat": -16.91434,
+      "lon": 145.78493,
+      "occurred_at": "2026-08-17T02:56:00+00:00",
+      "type": "ARRIVAL",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
     },
     {
       "confidence": 1.0,
@@ -591,6 +652,25 @@
     {
       "confidence": 1.0,
       "details": {
+        "backfilled": true,
+        "last_seen_in_port_at": "2026-07-07T04:39:54.290617+00:00",
+        "lat": -9.41969,
+        "lon": 159.9355,
+        "port": "Lautoka",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 0.1
+      },
+      "id": "departure:koru:Lautoka:2026-08-09T03:26:00+00:00",
+      "lat": -9.41969,
+      "lon": 159.9355,
+      "occurred_at": "2026-08-09T03:26:00+00:00",
+      "type": "DEPARTURE",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 17,
         "gap_hours": 326.6259748369444,
         "last_observation_at": "2026-07-17T05:20:00+00:00",
@@ -606,7 +686,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-10-13T23:45:09.226318+00:00",
-  "public_data_through": "2026-10-13T23:30:09.226318+00:00",
+  "generated_at": "2026-10-13T23:50:15.729237+00:00",
+  "public_data_through": "2026-10-13T23:35:15.729237+00:00",
   "schema_version": 1
 }
