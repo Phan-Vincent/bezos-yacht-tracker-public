@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-13T05:10:11.003467+00:00",
+  "generated_at": "2026-10-13T05:15:16.991571+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.2
+    "observations_within_hours": 0.1
   },
-  "public_data_through": "2026-10-13T04:55:11.003467+00:00",
+  "public_data_through": "2026-10-13T05:00:16.991571+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-13T04:40:03.295602+00:00",
-      "position_age_minutes": 30.1,
+      "last_accepted_position_at": "2026-10-13T04:58:18.328960+00:00",
+      "position_age_minutes": 17.0,
       "transport_status": "connected"
     }
   },
@@ -19,42 +19,42 @@
   },
   "vessels": [
     {
-      "age_minutes": 42.0,
+      "age_minutes": 20.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 262.4,
+        "cog": 55.4,
         "heading": 17.0,
         "lat": -36.83881,
-        "lon": 174.75347,
-        "observed_at": "2026-10-13T04:28:13.620290+00:00",
+        "lon": 174.75346,
+        "observed_at": "2026-10-13T04:55:13.577392+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "role": "primary_yacht",
-      "status": "stale"
+      "status": "current"
     },
     {
-      "age_minutes": 30.1,
+      "age_minutes": 17.0,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 31.4,
-        "heading": 264.0,
-        "lat": 1.26268,
-        "lon": 103.8118,
-        "observed_at": "2026-10-13T04:40:03.295602+00:00",
+        "cog": 206.1,
+        "heading": 263.0,
+        "lat": 1.26269,
+        "lon": 103.81181,
+        "observed_at": "2026-10-13T04:58:18.328960+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "role": "support_vessel",
-      "status": "stale"
+      "status": "current"
     }
   ]
 }
