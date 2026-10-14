@@ -21952,8 +21952,8 @@
   "properties": {
     "gap_count": 53,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-14T22:05:16.221846+00:00",
-    "public_data_through": "2026-10-14T21:50:16.221846+00:00"
+    "generated_at": "2026-10-14T22:10:02.748942+00:00",
+    "public_data_through": "2026-10-14T21:55:02.748942+00:00"
   },
   "type": "FeatureCollection"
 }
