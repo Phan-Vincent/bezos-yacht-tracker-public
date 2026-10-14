@@ -5,7 +5,8 @@
   --mist: #dce6df;
   --aqua: #62d7c8;
   --coral: #ff7c5c;
-  --muted: #7c8a86;
+  /* At least 4.5:1 on every light background (paper, cards, event log). */
+  --muted: #596763;
   --line: rgba(7, 28, 34, .18);
 }
 
@@ -40,7 +41,7 @@ h2 { font-size: clamp(2.6rem, 6vw, 5rem); line-height: .94; }
 .follow-btn { padding: 12px 20px; border: 1px solid rgba(255,255,255,.28); border-radius: 99px; color: var(--paper); background: rgba(255,255,255,.06); font: 700 .78rem/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; text-decoration: none; }
 .follow-btn:hover { background: var(--aqua); color: var(--ink); border-color: var(--aqua); }
 .follow-btn:focus-visible, a:focus-visible { outline: 3px solid var(--aqua); outline-offset: 4px; }
-.status-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); box-shadow: 0 0 0 5px rgba(124,138,134,.12); }
+.status-dot { width: 9px; height: 9px; border-radius: 50%; background: #7c8a86; box-shadow: 0 0 0 5px rgba(124,138,134,.12); }
 .status-dot.healthy { background: var(--aqua); box-shadow: 0 0 0 5px rgba(98,215,200,.12); }
 .divider { width: 1px; height: 16px; background: rgba(255,255,255,.25); }
 main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
