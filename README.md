@@ -11,3 +11,9 @@ GitHub Pages should publish the repository root. The collector refreshes
 ## Third-party
 
 Leaflet is bundled under the BSD 2-Clause License; see `LICENSE-leaflet.txt`.
+
+Vessel photos in `assets/` are by Conmat13 on Wikimedia Commons, licensed
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and resized for
+the web: [`koru.jpg`](https://commons.wikimedia.org/wiki/File:Koru_Superyacht.jpg)
+and [`abeona.jpg`](https://commons.wikimedia.org/wiki/File:Abeona.jpg). The
+resized copies are shared under the same licence.

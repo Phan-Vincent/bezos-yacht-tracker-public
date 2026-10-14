@@ -385,6 +385,30 @@ function renderPortCalls(payload, latest) {
   container.replaceChildren(...rows);
 }
 
+// The "Measured" strip on each vessel profile: figures from this tracker's
+// own public data, kept apart from the reported specifications.
+function renderProfileMeasures(events, latest, track) {
+  const calls = portCalls(events.events);
+  const distance = traceStats(track);
+  latest.vessels.forEach((vessel) => {
+    const list = document.querySelector(`.profile-measured[data-vessel="${vessel.id}"]`);
+    if (!list) return;
+    const vesselCalls = calls.filter((call) => call.vessel_id === vessel.id);
+    const place = vessel.place;
+    const current = vesselCalls.find((call) =>
+      !call.departure && !call.exitUnseen && call.arrival
+      && place?.relation === "in_port" && place.name === call.port);
+    const stop = current
+      ? `${current.port} · ${hoursLabel((new Date(latest.public_data_through) - new Date(current.arrival.occurred_at)) / 3.6e6)}`
+      : (isUnderway(vessel.latest) ? "Under way" : "Not in a known port");
+    list.replaceChildren(
+      metaItem("Measured · current stop", stop),
+      metaItem("Measured · port calls on record", String(vesselCalls.length)),
+      metaItem("Measured · verified distance, 30 days", nauticalMiles(distance[vessel.id]?.miles || 0))
+    );
+  });
+}
+
 function renderEvents(payload, statuses) {
   const container = document.querySelector("#events");
   const entries = timelineEntries(payload.events, statuses).filter(
@@ -598,6 +622,7 @@ async function boot() {
     lastStatuses = Object.fromEntries(latest.vessels.map((vessel) => [vessel.id, vessel.status]));
     renderEvents(events, lastStatuses);
     renderPortCalls(events, latest);
+    renderProfileMeasures(events, latest, track);
     renderMap(track, latest);
     renderStats(track);
     hasRendered = true;
