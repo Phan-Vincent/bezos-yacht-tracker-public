@@ -277,14 +277,29 @@ function timelineEntries(events, statuses) {
         tag: ongoing ? "Signal gap · ongoing" : "Signal gap"
       }];
     }
+    const tag = String(event.type).replaceAll("_", " ");
     return [{
       event,
       title: event.details?.port
         ? `${event.vessel_name} · ${event.details.port}`
         : `${event.vessel_name} · ${String(event.type).replaceAll("_", " ").toLowerCase()}`,
-      tag: String(event.type).replaceAll("_", " ")
+      tag: event.details?.backfilled ? `${tag} · reconstructed` : tag,
+      note: event.details?.backfilled ? reconstructedNote(event) : null
     }];
   });
+}
+
+// Backfilled port calls were rebuilt from stored fixes after the fact, often
+// across a signal gap, so the timestamp is when the move was first seen, not
+// when it happened. The note shows the last fix on the other side.
+function reconstructedNote(event) {
+  const departure = event.type === "DEPARTURE";
+  const lastSeen = departure
+    ? event.details.last_seen_in_port_at
+    : event.details.last_seen_outside_at;
+  const base = "Reconstructed later from stored AIS fixes";
+  if (!lastSeen) return `${base}.`;
+  return `${base}; last seen ${departure ? "in port" : "outside port"} ${utcLabel(lastSeen)}.`;
 }
 
 function renderEvents(payload, statuses) {
@@ -308,11 +323,17 @@ function renderEvents(payload, statuses) {
     return;
   }
 
-  const eventNodes = entries.map(({ event, title, tag }) => {
+  const eventNodes = entries.map(({ event, title, tag, note }) => {
     const article = node("article", "event");
     const time = node("time", "", utcLabel(event.occurred_at));
     time.dateTime = event.occurred_at;
-    article.append(time, node("h3", "", title), node("span", "event-type", tag));
+    let body = node("h3", "", title);
+    if (note) {
+      const heading = body;
+      body = node("div", "event-body");
+      body.append(heading, node("p", "event-note", note));
+    }
+    article.append(time, body, node("span", "event-type", tag));
     return article;
   });
   container.replaceChildren(...eventNodes);

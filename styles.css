@@ -104,6 +104,7 @@ main section.timeline-section { padding-top: clamp(48px, 6.7vw, 94px); padding-b
 .event:last-child { border-bottom: 0; }
 .event time, .event-type { color: var(--muted); font: .64rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
 .event h3 { margin: 0; font: 400 1rem Georgia, serif; }
+.event-note { margin: 6px 0 0; color: var(--muted); font: italic .82rem/1.4 Georgia, serif; }
 .method-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: clamp(50px, 8vw, 130px); }
 .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
 .method-grid article { padding-top: 18px; border-top: 1px solid var(--line); }
