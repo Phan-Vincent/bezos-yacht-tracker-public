@@ -4,22 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            147.5736,
-            -19.21411
-          ],
-          [
-            147.57646,
-            -19.21682
-          ],
-          [
-            147.57886,
-            -19.21914
-          ],
-          [
-            147.5821,
-            -19.22229
-          ],
-          [
             147.59062,
             -19.23053
           ],
@@ -129,9 +113,9 @@
       "properties": {
         "ended_at": "2026-09-14T17:44:00+00:00",
         "name": "KORU",
-        "point_count": 30,
+        "point_count": 26,
         "segment_index": 0,
-        "started_at": "2026-09-14T16:00:33.283579+00:00",
+        "started_at": "2026-09-14T16:07:35.089735+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -15134,14 +15118,18 @@
           [
             174.75345,
             -36.83881
+          ],
+          [
+            174.75346,
+            -36.83881
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-14T15:55:13.395384+00:00",
+        "ended_at": "2026-10-14T16:04:14.123272+00:00",
         "name": "KORU",
-        "point_count": 216,
+        "point_count": 217,
         "segment_index": 11,
         "started_at": "2026-10-12T23:52:13.999300+00:00",
         "vessel_id": "koru"
@@ -22006,14 +21994,18 @@
           [
             103.81181,
             1.2627
+          ],
+          [
+            103.81181,
+            1.2627
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-14T15:25:16.849206+00:00",
+        "ended_at": "2026-10-14T16:01:18.004162+00:00",
         "name": "ABEONA",
-        "point_count": 2,
+        "point_count": 3,
         "segment_index": 43,
         "started_at": "2026-10-14T14:55:17.342476+00:00",
         "vessel_id": "abeona"
@@ -22024,8 +22016,8 @@
   "properties": {
     "gap_count": 54,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-14T16:15:05.948182+00:00",
-    "public_data_through": "2026-10-14T16:00:05.948182+00:00"
+    "generated_at": "2026-10-14T16:20:11.246395+00:00",
+    "public_data_through": "2026-10-14T16:05:11.246395+00:00"
   },
   "type": "FeatureCollection"
 }

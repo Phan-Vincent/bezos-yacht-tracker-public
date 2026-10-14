@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-14T16:15:05.948182+00:00",
+  "generated_at": "2026-10-14T16:20:11.246395+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.5
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-10-14T16:00:05.948182+00:00",
+  "public_data_through": "2026-10-14T16:05:11.246395+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-14T15:55:13.395384+00:00",
-      "position_age_minutes": 19.9,
+      "last_accepted_position_at": "2026-10-14T16:04:14.123272+00:00",
+      "position_age_minutes": 16.0,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 19.9,
+      "age_minutes": 16.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 100.0,
+        "cog": 50.4,
         "heading": 17.0,
         "lat": -36.83881,
-        "lon": 174.75345,
-        "observed_at": "2026-10-14T15:55:13.395384+00:00",
+        "lon": 174.75346,
+        "observed_at": "2026-10-14T16:04:14.123272+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 49.8,
+      "age_minutes": 18.9,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 103.4,
+        "cog": 182.4,
         "heading": 263.0,
         "lat": 1.2627,
         "lon": 103.81181,
-        "observed_at": "2026-10-14T15:25:16.849206+00:00",
+        "observed_at": "2026-10-14T16:01:18.004162+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
