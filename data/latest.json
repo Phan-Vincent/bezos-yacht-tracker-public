@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-14T13:30:17.728720+00:00",
+  "generated_at": "2026-10-14T13:35:05.728228+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.2
+    "observations_within_hours": 0.1
   },
-  "public_data_through": "2026-10-14T13:15:17.728720+00:00",
+  "public_data_through": "2026-10-14T13:20:05.728228+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-14T13:07:16.705272+00:00",
-      "position_age_minutes": 23.0,
+      "last_accepted_position_at": "2026-10-14T13:19:17.092270+00:00",
+      "position_age_minutes": 15.8,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 32.1,
+      "age_minutes": 18.9,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 275.2,
+        "cog": 193.5,
         "heading": 17.0,
         "lat": -36.83882,
-        "lon": 174.75346,
-        "observed_at": "2026-10-14T12:58:13.729683+00:00",
+        "lon": 174.75345,
+        "observed_at": "2026-10-14T13:16:13.191285+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -41,23 +41,23 @@
         "relation": "in_port"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 23.0,
+      "age_minutes": 15.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 25.3,
+        "cog": 106.1,
         "heading": 263.0,
-        "lat": 1.2627,
+        "lat": 1.26271,
         "lon": 103.81181,
-        "observed_at": "2026-10-14T13:07:16.705272+00:00",
+        "observed_at": "2026-10-14T13:19:17.092270+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
