@@ -5,6 +5,8 @@
   --mist: #dce6df;
   --aqua: #62d7c8;
   --coral: #ff7c5c;
+  /* Coral for small text on light backgrounds; the bright one is for dark ones. */
+  --coral-ink: #a8432a;
   /* At least 4.5:1 on every light background (paper, cards, event log). */
   --muted: #596763;
   --line: rgba(7, 28, 34, .18);
@@ -31,7 +33,8 @@ nav { display: flex; justify-content: space-between; align-items: center; gap: 2
 .nav-links { display: flex; gap: 24px; font-size: .86rem; }
 .nav-links a { color: #bfd0cb; text-decoration: none; }
 .hero-copy { max-width: 950px; margin-top: clamp(54px, 8vh, 92px); }
-.eyebrow { margin: 0 0 18px; color: var(--coral); font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .18em; }
+.eyebrow { margin: 0 0 18px; color: var(--coral-ink); font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .18em; }
+.hero .eyebrow, .map-section .eyebrow { color: var(--coral); }
 h1, h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.045em; }
 h1 { max-width: 820px; font-size: clamp(3.4rem, 8vw, 7rem); line-height: .86; }
 h2 { font-size: clamp(2.6rem, 6vw, 5rem); line-height: .94; }
@@ -121,7 +124,7 @@ main section { padding: clamp(72px, 10vw, 140px) clamp(22px, 5vw, 76px); }
 .profile-specs dd span { color: var(--muted); font-size: .82rem; }
 .profile-measured { border-top: 1px dashed var(--line); }
 .profile-measured:empty { display: none; }
-.profile-measured dt { color: #a8432a; }
+.profile-measured dt { color: var(--coral-ink); }
 .profile-measured dd { font-family: ui-monospace, monospace; }
 .profile-sources { margin: 4px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.5; }
 .timeline-filter { display: flex; gap: 8px; margin-bottom: 18px; }
@@ -142,7 +145,7 @@ main section.timeline-section { padding-top: clamp(48px, 6.7vw, 94px); padding-b
 .method-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: clamp(50px, 8vw, 130px); }
 .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
 .method-grid article { padding-top: 18px; border-top: 1px solid var(--line); }
-.method-grid span { color: var(--coral); font: .7rem ui-monospace, monospace; }
+.method-grid span { color: var(--coral-ink); font: .7rem ui-monospace, monospace; }
 .method-grid h3 { margin: 28px 0 10px; font: 400 1.35rem Georgia, serif; }
 .method-grid p { color: #52615d; line-height: 1.55; }
 footer { display: flex; justify-content: space-between; gap: 30px; padding: 36px clamp(22px, 5vw, 76px); color: #9fb1ac; background: #051519; font-size: .78rem; }
