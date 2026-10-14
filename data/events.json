@@ -654,16 +654,16 @@
       "details": {
         "backfilled": true,
         "last_seen_in_port_at": "2026-07-07T04:39:54.290617+00:00",
-        "lat": -9.41969,
-        "lon": 159.9355,
+        "lat": -14.8252,
+        "lon": 166.98098,
         "port": "Lautoka",
         "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
-        "sog": 0.1
+        "sog": 12.7
       },
-      "id": "departure:koru:Lautoka:2026-08-09T03:26:00+00:00",
-      "lat": -9.41969,
-      "lon": 159.9355,
-      "occurred_at": "2026-08-09T03:26:00+00:00",
+      "id": "departure:koru:Lautoka:2026-07-17T05:20:00+00:00",
+      "lat": -14.8252,
+      "lon": 166.98098,
+      "occurred_at": "2026-07-17T05:20:00+00:00",
       "type": "DEPARTURE",
       "vessel_id": "koru",
       "vessel_name": "KORU"
@@ -686,7 +686,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-10-14T06:00:18.474456+00:00",
-  "public_data_through": "2026-10-14T05:45:18.474456+00:00",
+  "generated_at": "2026-10-14T06:05:16.220918+00:00",
+  "public_data_through": "2026-10-14T05:50:16.220918+00:00",
   "schema_version": 1
 }
