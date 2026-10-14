@@ -23,6 +23,7 @@
         <a class="brand" href="./">ONE BILLIONAIRE. TWO VESSELS. ONE PUBLIC RECORD.</a>
         <div class="nav-links">
           <a href="#fleet">Fleet</a>
+          <a href="#ports">Ports</a>
           <a href="#timeline">Timeline</a>
           <a href="#method">Method</a>
           <a href="data/events.rss">RSS</a>
@@ -74,6 +75,17 @@
           <p>Distance counts only verified track, so it misses any passage made during a signal gap. Coverage is the share of the window with fixes no more than 90 minutes apart.</p>
         </div>
         <div id="trace-stats" class="trace-stats" aria-live="polite"></div>
+      </section>
+
+      <section id="ports" class="ports-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PORT CALLS</p>
+            <h2>Where they stopped</h2>
+          </div>
+          <p class="section-note">A stop counts once two slow fixes inside a port confirm it; it ends after two fixes outside. Times come from those fixes, so a signal gap widens them.</p>
+        </div>
+        <div id="port-calls" class="port-calls" aria-live="polite"></div>
       </section>
 
       <section id="timeline" class="timeline-section">

@@ -302,6 +302,89 @@ function reconstructedNote(event) {
   return `${base}; last seen ${departure ? "in port" : "outside port"} ${utcLabel(lastSeen)}.`;
 }
 
+// Pair each arrival with the next departure from the same port. A departure
+// with no arrival before it began before the public record; an arrival with
+// no departure is either the current stop or one whose exit wasn't seen.
+function portCalls(events) {
+  const portEvents = events
+    .filter((event) => (event.type === "ARRIVAL" || event.type === "DEPARTURE") && event.details?.port)
+    .sort((a, b) => new Date(a.occurred_at) - new Date(b.occurred_at));
+  const open = new Map();
+  const calls = [];
+  portEvents.forEach((event) => {
+    const port = event.details.port;
+    const current = open.get(event.vessel_id);
+    if (event.type === "ARRIVAL") {
+      if (current) current.exitUnseen = true;
+      const call = { vessel_id: event.vessel_id, vessel_name: event.vessel_name, port, arrival: event, departure: null };
+      calls.push(call);
+      open.set(event.vessel_id, call);
+      return;
+    }
+    if (current && current.port === port) {
+      current.departure = event;
+    } else {
+      if (current) current.exitUnseen = true;
+      calls.push({ vessel_id: event.vessel_id, vessel_name: event.vessel_name, port, arrival: null, departure: event });
+    }
+    open.delete(event.vessel_id);
+  });
+  return calls.reverse();
+}
+
+function dateCell(label, iso, fallback) {
+  const wrapper = document.createElement("div");
+  const value = document.createElement("dd");
+  if (iso) {
+    const time = node("time", "", new Date(iso).toLocaleDateString([], { dateStyle: "medium", timeZone: "UTC" }));
+    time.dateTime = iso;
+    time.title = utcLabel(iso);
+    value.append(time);
+  } else {
+    value.textContent = fallback;
+    value.className = "unknown";
+  }
+  wrapper.append(node("dt", "", label), value);
+  return wrapper;
+}
+
+function renderPortCalls(payload, latest) {
+  const container = document.querySelector("#port-calls");
+  const vessels = Object.fromEntries(latest.vessels.map((vessel) => [vessel.id, vessel]));
+  const calls = portCalls(payload.events);
+  if (!calls.length) {
+    container.replaceChildren(node("p", "port-empty", "No confirmed port calls in the public record yet."));
+    return;
+  }
+  const rows = calls.map((call) => {
+    const place = vessels[call.vessel_id]?.place;
+    const inPortNow = !call.departure && !call.exitUnseen
+      && place?.relation === "in_port" && place.name === call.port;
+    const start = call.arrival?.occurred_at;
+    const end = call.departure?.occurred_at || (inPortNow ? latest.public_data_through : null);
+    const hours = start && end ? (new Date(end) - new Date(start)) / 3.6e6 : null;
+    const reconstructed = [call.arrival, call.departure].some((event) => event?.details?.backfilled);
+
+    const row = node("article", `port-call ${call.vessel_id}`);
+    const title = node("div", "port-call-title");
+    title.append(node("p", "port-vessel", call.vessel_name), node("h3", "", call.port));
+    if (reconstructed) {
+      const tag = node("span", "port-tag", "Reconstructed");
+      tag.title = "Rebuilt later from stored AIS fixes; see the event log for the last fix on the other side.";
+      title.append(tag);
+    }
+    const facts = node("dl", "port-call-facts");
+    facts.append(
+      dateCell("Arrived", start, "Before this record"),
+      dateCell("Departed", call.departure?.occurred_at, inPortNow ? "In port now" : "Not yet seen"),
+      metaItem(inPortNow ? "In port so far" : "In port", hours == null ? "—" : `about ${hoursLabel(hours)}`)
+    );
+    row.append(title, facts);
+    return row;
+  });
+  container.replaceChildren(...rows);
+}
+
 function renderEvents(payload, statuses) {
   const container = document.querySelector("#events");
   const entries = timelineEntries(payload.events, statuses).filter(
@@ -514,6 +597,7 @@ async function boot() {
     lastEvents = events;
     lastStatuses = Object.fromEntries(latest.vessels.map((vessel) => [vessel.id, vessel.status]));
     renderEvents(events, lastStatuses);
+    renderPortCalls(events, latest);
     renderMap(track, latest);
     renderStats(track);
     hasRendered = true;
