@@ -22188,8 +22188,8 @@
   "properties": {
     "gap_count": 54,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-15T16:35:06.225728+00:00",
-    "public_data_through": "2026-10-15T16:20:06.225728+00:00"
+    "generated_at": "2026-10-15T16:40:03.523891+00:00",
+    "public_data_through": "2026-10-15T16:25:03.523891+00:00"
   },
   "type": "FeatureCollection"
 }
