@@ -22028,8 +22028,8 @@
   "properties": {
     "gap_count": 53,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-15T05:05:06.474777+00:00",
-    "public_data_through": "2026-10-15T04:50:06.474777+00:00"
+    "generated_at": "2026-10-15T05:10:15.484190+00:00",
+    "public_data_through": "2026-10-15T04:55:15.484190+00:00"
   },
   "type": "FeatureCollection"
 }
