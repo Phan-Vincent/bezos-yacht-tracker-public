@@ -21316,8 +21316,8 @@
   "properties": {
     "gap_count": 59,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-19T14:30:17.115273+00:00",
-    "public_data_through": "2026-10-19T14:15:17.115273+00:00"
+    "generated_at": "2026-10-19T14:35:20.162689+00:00",
+    "public_data_through": "2026-10-19T14:20:20.162689+00:00"
   },
   "type": "FeatureCollection"
 }
