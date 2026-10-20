@@ -4,10 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            152.54077,
-            -24.51672
-          ],
-          [
             152.54084,
             -24.51674
           ],
@@ -789,9 +785,9 @@
       "properties": {
         "ended_at": "2026-09-22T03:35:00+00:00",
         "name": "KORU",
-        "point_count": 195,
+        "point_count": 194,
         "segment_index": 0,
-        "started_at": "2026-09-20T11:29:00+00:00",
+        "started_at": "2026-09-20T11:35:57.309334+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -15912,9 +15908,29 @@
       "geometry": {
         "coordinates": [
           [
-            103.81285,
-            1.26281
+            174.75346,
+            -36.83882
           ],
+          [
+            174.75345,
+            -36.83882
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "ended_at": "2026-10-20T11:28:13.404001+00:00",
+        "name": "KORU",
+        "point_count": 2,
+        "segment_index": 8,
+        "started_at": "2026-10-20T10:46:14.194496+00:00",
+        "vessel_id": "koru"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           [
             103.81285,
             1.26281
@@ -16805,9 +16821,9 @@
       "properties": {
         "ended_at": "2026-09-22T22:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 222,
+        "point_count": 221,
         "segment_index": 0,
-        "started_at": "2026-09-20T11:26:00+00:00",
+        "started_at": "2026-09-20T11:38:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -20956,8 +20972,8 @@
   "properties": {
     "gap_count": 63,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-20T11:40:15.081634+00:00",
-    "public_data_through": "2026-10-20T11:25:15.081634+00:00"
+    "generated_at": "2026-10-20T11:45:34.595740+00:00",
+    "public_data_through": "2026-10-20T11:30:34.595740+00:00"
   },
   "type": "FeatureCollection"
 }
