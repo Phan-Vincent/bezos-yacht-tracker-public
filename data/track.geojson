@@ -20240,8 +20240,8 @@
   "properties": {
     "gap_count": 69,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-21T17:05:02.161188+00:00",
-    "public_data_through": "2026-10-21T16:50:02.161188+00:00"
+    "generated_at": "2026-10-21T17:10:06.409955+00:00",
+    "public_data_through": "2026-10-21T16:55:06.409955+00:00"
   },
   "type": "FeatureCollection"
 }
