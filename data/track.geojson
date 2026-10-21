@@ -4,10 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            152.54069,
-            -24.51678
-          ],
-          [
             152.54062,
             -24.51677
           ],
@@ -525,9 +521,9 @@
       "properties": {
         "ended_at": "2026-09-22T03:35:00+00:00",
         "name": "KORU",
-        "point_count": 129,
+        "point_count": 128,
         "segment_index": 0,
-        "started_at": "2026-09-21T00:41:00+00:00",
+        "started_at": "2026-09-21T00:59:00+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -15854,14 +15850,18 @@
           [
             174.75347,
             -36.83881
+          ],
+          [
+            174.75347,
+            -36.83881
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-21T00:37:14.466705+00:00",
+        "ended_at": "2026-10-21T00:43:14.402456+00:00",
         "name": "KORU",
-        "point_count": 52,
+        "point_count": 53,
         "segment_index": 8,
         "started_at": "2026-10-20T10:46:14.194496+00:00",
         "vessel_id": "koru"
@@ -15871,10 +15871,6 @@
     {
       "geometry": {
         "coordinates": [
-          [
-            103.81284,
-            1.26281
-          ],
           [
             103.81284,
             1.26281
@@ -16569,9 +16565,9 @@
       "properties": {
         "ended_at": "2026-09-22T22:14:00+00:00",
         "name": "ABEONA",
-        "point_count": 173,
+        "point_count": 172,
         "segment_index": 0,
-        "started_at": "2026-09-21T00:44:00+00:00",
+        "started_at": "2026-09-21T00:56:00+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -20720,8 +20716,8 @@
   "properties": {
     "gap_count": 64,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-21T00:55:02.652518+00:00",
-    "public_data_through": "2026-10-21T00:40:02.652518+00:00"
+    "generated_at": "2026-10-21T01:00:15.162685+00:00",
+    "public_data_through": "2026-10-21T00:45:15.162685+00:00"
   },
   "type": "FeatureCollection"
 }
