@@ -19918,10 +19918,10 @@
     }
   ],
   "properties": {
-    "gap_count": 75,
+    "gap_count": 76,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-22T15:30:02.415071+00:00",
-    "public_data_through": "2026-10-22T15:15:02.415071+00:00"
+    "generated_at": "2026-10-22T15:35:19.905741+00:00",
+    "public_data_through": "2026-10-22T15:20:19.905741+00:00"
   },
   "type": "FeatureCollection"
 }
