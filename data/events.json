@@ -3,6 +3,22 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 57,
+        "gap_hours": 48.00769336027778,
+        "last_observation_at": "2026-10-24T03:22:18.201288+00:00",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/"
+      },
+      "id": "signal-gap:57",
+      "lat": 1.26267,
+      "lon": 103.81181,
+      "occurred_at": "2026-10-26T03:22:45.897385+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "episode_id": 56,
         "gap_hours": 6.0070455861111105,
         "last_observation_at": "2026-10-22T15:19:13+00:00",
@@ -645,22 +661,6 @@
     {
       "confidence": 1.0,
       "details": {
-        "episode_id": 38,
-        "gap_hours": 6.011932269444444,
-        "last_observation_at": "2026-08-17T13:31:00+00:00",
-        "site_url": ""
-      },
-      "id": "signal-gap:38",
-      "lat": -8.85984,
-      "lon": 130.45956,
-      "occurred_at": "2026-08-17T19:31:42.956170+00:00",
-      "type": "SIGNAL_GAP",
-      "vessel_id": "abeona",
-      "vessel_name": "ABEONA"
-    },
-    {
-      "confidence": 1.0,
-      "details": {
         "backfilled": true,
         "last_seen_outside_at": "2026-08-17T02:27:00+00:00",
         "lat": -16.91434,
@@ -760,7 +760,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-10-26T03:35:08.155296+00:00",
-  "public_data_through": "2026-10-26T03:20:08.155296+00:00",
+  "generated_at": "2026-10-26T03:40:03.155900+00:00",
+  "public_data_through": "2026-10-26T03:25:03.155900+00:00",
   "schema_version": 1
 }
