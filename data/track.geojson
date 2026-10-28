@@ -1666,7 +1666,7 @@
         "ended_at": "2026-09-30T10:46:39.258052+00:00",
         "name": "KORU",
         "point_count": 414,
-        "segment_index": 1,
+        "segment_index": 0,
         "started_at": "2026-09-28T17:37:43.029887+00:00",
         "vessel_id": "koru"
       },
@@ -10042,7 +10042,7 @@
         "ended_at": "2026-10-11T22:28:15.082827+00:00",
         "name": "KORU",
         "point_count": 2090,
-        "segment_index": 2,
+        "segment_index": 1,
         "started_at": "2026-09-30T14:28:38.996032+00:00",
         "vessel_id": "koru"
       },
@@ -10514,7 +10514,7 @@
         "ended_at": "2026-10-12T21:46:13.470509+00:00",
         "name": "KORU",
         "point_count": 114,
-        "segment_index": 3,
+        "segment_index": 2,
         "started_at": "2026-10-12T05:07:14.916612+00:00",
         "vessel_id": "koru"
       },
@@ -14522,7 +14522,7 @@
         "ended_at": "2026-10-20T08:49:13.120564+00:00",
         "name": "KORU",
         "point_count": 998,
-        "segment_index": 4,
+        "segment_index": 3,
         "started_at": "2026-10-12T23:52:13.999300+00:00",
         "vessel_id": "koru"
       },
@@ -14806,7 +14806,7 @@
         "ended_at": "2026-10-21T03:19:13.700844+00:00",
         "name": "KORU",
         "point_count": 67,
-        "segment_index": 5,
+        "segment_index": 4,
         "started_at": "2026-10-20T10:46:14.194496+00:00",
         "vessel_id": "koru"
       },
@@ -14834,7 +14834,7 @@
         "ended_at": "2026-10-21T12:34:13.849864+00:00",
         "name": "KORU",
         "point_count": 3,
-        "segment_index": 7,
+        "segment_index": 6,
         "started_at": "2026-10-21T11:16:14+00:00",
         "vessel_id": "koru"
       },
@@ -14918,7 +14918,7 @@
         "ended_at": "2026-10-22T05:04:12.994066+00:00",
         "name": "KORU",
         "point_count": 17,
-        "segment_index": 11,
+        "segment_index": 10,
         "started_at": "2026-10-21T22:28:13.133760+00:00",
         "vessel_id": "koru"
       },
@@ -14942,7 +14942,7 @@
         "ended_at": "2026-10-22T07:19:14.029689+00:00",
         "name": "KORU",
         "point_count": 2,
-        "segment_index": 12,
+        "segment_index": 11,
         "started_at": "2026-10-22T07:01:13.282636+00:00",
         "vessel_id": "koru"
       },
@@ -14982,7 +14982,7 @@
         "ended_at": "2026-10-22T12:07:14.793746+00:00",
         "name": "KORU",
         "point_count": 6,
-        "segment_index": 13,
+        "segment_index": 12,
         "started_at": "2026-10-22T09:16:13+00:00",
         "vessel_id": "koru"
       },
@@ -15006,7 +15006,7 @@
         "ended_at": "2026-10-22T23:40:13.115983+00:00",
         "name": "KORU",
         "point_count": 2,
-        "segment_index": 16,
+        "segment_index": 15,
         "started_at": "2026-10-22T23:04:13.495562+00:00",
         "vessel_id": "koru"
       },
@@ -15038,7 +15038,7 @@
         "ended_at": "2026-10-23T04:25:13.221090+00:00",
         "name": "KORU",
         "point_count": 4,
-        "segment_index": 18,
+        "segment_index": 17,
         "started_at": "2026-10-23T04:01:14.500659+00:00",
         "vessel_id": "koru"
       },
@@ -15094,7 +15094,7 @@
         "ended_at": "2026-10-23T13:46:14.438319+00:00",
         "name": "KORU",
         "point_count": 10,
-        "segment_index": 20,
+        "segment_index": 19,
         "started_at": "2026-10-23T09:10:14+00:00",
         "vessel_id": "koru"
       },
@@ -16386,7 +16386,7 @@
         "ended_at": "2026-10-26T19:25:13.262900+00:00",
         "name": "KORU",
         "point_count": 319,
-        "segment_index": 21,
+        "segment_index": 20,
         "started_at": "2026-10-23T15:16:14.452501+00:00",
         "vessel_id": "koru"
       },
@@ -16442,7 +16442,7 @@
         "ended_at": "2026-10-27T03:10:14.835447+00:00",
         "name": "KORU",
         "point_count": 10,
-        "segment_index": 22,
+        "segment_index": 21,
         "started_at": "2026-10-26T21:22:14+00:00",
         "vessel_id": "koru"
       },
@@ -16842,7 +16842,7 @@
         "ended_at": "2026-10-28T11:13:13.438137+00:00",
         "name": "KORU",
         "point_count": 96,
-        "segment_index": 23,
+        "segment_index": 22,
         "started_at": "2026-10-27T05:10:13.988476+00:00",
         "vessel_id": "koru"
       },
@@ -19758,10 +19758,10 @@
     }
   ],
   "properties": {
-    "gap_count": 87,
+    "gap_count": 86,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-28T13:05:02.995071+00:00",
-    "public_data_through": "2026-10-28T12:50:02.995071+00:00"
+    "generated_at": "2026-10-28T13:10:16.702571+00:00",
+    "public_data_through": "2026-10-28T12:55:16.702571+00:00"
   },
   "type": "FeatureCollection"
 }
