@@ -17122,14 +17122,18 @@
           [
             174.75346,
             -36.83881
+          ],
+          [
+            174.75346,
+            -36.83881
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-10-28T04:01:14.974291+00:00",
+        "ended_at": "2026-10-28T04:07:14.567481+00:00",
         "name": "KORU",
-        "point_count": 73,
+        "point_count": 74,
         "segment_index": 24,
         "started_at": "2026-10-27T05:10:13.988476+00:00",
         "vessel_id": "koru"
@@ -20084,8 +20088,8 @@
   "properties": {
     "gap_count": 88,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-28T04:20:07.656018+00:00",
-    "public_data_through": "2026-10-28T04:05:07.656018+00:00"
+    "generated_at": "2026-10-28T04:25:16.942370+00:00",
+    "public_data_through": "2026-10-28T04:10:16.942370+00:00"
   },
   "type": "FeatureCollection"
 }
