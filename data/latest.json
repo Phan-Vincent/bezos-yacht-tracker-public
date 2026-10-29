@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-29T19:25:04.686253+00:00",
+  "generated_at": "2026-10-29T19:30:05.656695+00:00",
   "pairing": null,
-  "public_data_through": "2026-10-29T19:10:04.686253+00:00",
+  "public_data_through": "2026-10-29T19:15:05.656695+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-10-29T15:49:13.055952+00:00",
-      "position_age_minutes": 215.9,
+      "last_accepted_position_at": "2026-10-29T19:10:14.153677+00:00",
+      "position_age_minutes": 19.9,
       "transport_status": "connected"
     }
   },
@@ -16,18 +16,18 @@
   },
   "vessels": [
     {
-      "age_minutes": 95.8,
+      "age_minutes": 19.9,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 236.9,
+        "cog": 192.5,
         "heading": 17.0,
-        "lat": -36.83882,
-        "lon": 174.75346,
-        "observed_at": "2026-10-29T17:49:14+00:00",
+        "lat": -36.83881,
+        "lon": 174.75348,
+        "observed_at": "2026-10-29T19:10:14.153677+00:00",
         "sog": 0.0,
-        "source": "vesselapi"
+        "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
@@ -38,14 +38,14 @@
         "relation": "in_port"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 1160.8,
+      "age_minutes": 1165.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
