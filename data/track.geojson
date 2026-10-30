@@ -18440,8 +18440,8 @@
   "properties": {
     "gap_count": 95,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-30T03:55:02.663255+00:00",
-    "public_data_through": "2026-10-30T03:40:02.663255+00:00"
+    "generated_at": "2026-10-30T04:00:19.406513+00:00",
+    "public_data_through": "2026-10-30T03:45:19.406513+00:00"
   },
   "type": "FeatureCollection"
 }
