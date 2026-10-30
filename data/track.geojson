@@ -18304,8 +18304,8 @@
   "properties": {
     "gap_count": 97,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-30T10:40:09.164024+00:00",
-    "public_data_through": "2026-10-30T10:25:09.164024+00:00"
+    "generated_at": "2026-10-30T10:45:11.657877+00:00",
+    "public_data_through": "2026-10-30T10:30:11.657877+00:00"
   },
   "type": "FeatureCollection"
 }
