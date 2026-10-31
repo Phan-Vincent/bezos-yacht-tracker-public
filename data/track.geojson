@@ -17860,8 +17860,8 @@
   "properties": {
     "gap_count": 100,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-31T07:45:19.906231+00:00",
-    "public_data_through": "2026-10-31T07:30:19.906231+00:00"
+    "generated_at": "2026-10-31T07:50:18.463037+00:00",
+    "public_data_through": "2026-10-31T07:35:18.463037+00:00"
   },
   "type": "FeatureCollection"
 }
