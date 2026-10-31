@@ -17850,10 +17850,10 @@
     }
   ],
   "properties": {
-    "gap_count": 100,
+    "gap_count": 101,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-31T08:35:17.910284+00:00",
-    "public_data_through": "2026-10-31T08:20:17.910284+00:00"
+    "generated_at": "2026-10-31T08:40:17.908495+00:00",
+    "public_data_through": "2026-10-31T08:25:17.908495+00:00"
   },
   "type": "FeatureCollection"
 }
