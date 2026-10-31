@@ -17620,8 +17620,8 @@
   "properties": {
     "gap_count": 101,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-10-31T19:40:02.160532+00:00",
-    "public_data_through": "2026-10-31T19:25:02.160532+00:00"
+    "generated_at": "2026-10-31T19:45:01.869863+00:00",
+    "public_data_through": "2026-10-31T19:30:01.869863+00:00"
   },
   "type": "FeatureCollection"
 }
