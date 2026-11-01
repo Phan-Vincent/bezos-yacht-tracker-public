@@ -17260,8 +17260,8 @@
   "properties": {
     "gap_count": 102,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-01T13:35:02.159076+00:00",
-    "public_data_through": "2026-11-01T13:20:02.159076+00:00"
+    "generated_at": "2026-11-01T13:40:03.403027+00:00",
+    "public_data_through": "2026-11-01T13:25:03.403027+00:00"
   },
   "type": "FeatureCollection"
 }
