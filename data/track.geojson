@@ -17120,8 +17120,8 @@
   "properties": {
     "gap_count": 102,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-01T22:25:13.171975+00:00",
-    "public_data_through": "2026-11-01T22:10:13.171975+00:00"
+    "generated_at": "2026-11-01T22:30:04.405480+00:00",
+    "public_data_through": "2026-11-01T22:15:04.405480+00:00"
   },
   "type": "FeatureCollection"
 }
