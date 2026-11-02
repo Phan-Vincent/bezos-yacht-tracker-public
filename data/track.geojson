@@ -16568,8 +16568,8 @@
   "properties": {
     "gap_count": 101,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-02T18:05:05.908064+00:00",
-    "public_data_through": "2026-11-02T17:50:05.908064+00:00"
+    "generated_at": "2026-11-02T18:10:02.155095+00:00",
+    "public_data_through": "2026-11-02T17:55:02.155095+00:00"
   },
   "type": "FeatureCollection"
 }
