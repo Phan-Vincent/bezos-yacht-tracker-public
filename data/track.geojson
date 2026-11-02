@@ -17052,8 +17052,8 @@
   "properties": {
     "gap_count": 102,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-02T01:05:10.159961+00:00",
-    "public_data_through": "2026-11-02T00:50:10.159961+00:00"
+    "generated_at": "2026-11-02T01:10:09.911486+00:00",
+    "public_data_through": "2026-11-02T00:55:09.911486+00:00"
   },
   "type": "FeatureCollection"
 }
