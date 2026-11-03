@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-03T01:15:10.697084+00:00",
+  "generated_at": "2026-11-03T16:01:06.299950+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 1.8
+    "observations_within_hours": 5.1
   },
-  "public_data_through": "2026-11-03T01:00:10.697084+00:00",
+  "public_data_through": "2026-11-03T15:46:06.299950+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-03T00:10:14.728182+00:00",
-      "position_age_minutes": 64.9,
+      "last_accepted_position_at": "2026-11-03T14:13:14.483791+00:00",
+      "position_age_minutes": 107.9,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 64.9,
+      "age_minutes": 107.9,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 254.3,
+        "cog": 268.9,
         "heading": 17.0,
-        "lat": -36.83881,
+        "lat": -36.83882,
         "lon": 174.75346,
-        "observed_at": "2026-11-03T00:10:14.728182+00:00",
+        "observed_at": "2026-11-03T14:13:14.483791+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 172.9,
+      "age_minutes": 416.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 316.3,
+        "cog": 344.7,
         "heading": 263.0,
-        "lat": 1.26268,
-        "lon": 103.81181,
-        "observed_at": "2026-11-02T22:22:17.962085+00:00",
+        "lat": 1.26269,
+        "lon": 103.81182,
+        "observed_at": "2026-11-03T09:04:17.066736+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "signal_gap",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
