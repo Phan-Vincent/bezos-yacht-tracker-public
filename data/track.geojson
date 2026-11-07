@@ -13540,8 +13540,8 @@
   "properties": {
     "gap_count": 121,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-07T12:40:08.590269+00:00",
-    "public_data_through": "2026-11-07T12:25:08.590269+00:00"
+    "generated_at": "2026-11-07T12:45:12.095429+00:00",
+    "public_data_through": "2026-11-07T12:30:12.095429+00:00"
   },
   "type": "FeatureCollection"
 }
