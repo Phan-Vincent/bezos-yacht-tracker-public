@@ -12428,8 +12428,8 @@
   "properties": {
     "gap_count": 125,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-08T21:45:13.591948+00:00",
-    "public_data_through": "2026-11-08T21:30:13.591948+00:00"
+    "generated_at": "2026-11-08T21:50:14.337147+00:00",
+    "public_data_through": "2026-11-08T21:35:14.337147+00:00"
   },
   "type": "FeatureCollection"
 }
