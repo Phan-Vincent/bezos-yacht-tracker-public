@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-12T02:45:02.840366+00:00",
+  "generated_at": "2026-11-12T02:50:04.343624+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.1
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-12T02:30:02.840366+00:00",
+  "public_data_through": "2026-11-12T02:35:04.343624+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-12T01:55:14.941012+00:00",
-      "position_age_minutes": 49.8,
+      "last_accepted_position_at": "2026-11-12T02:34:14.253238+00:00",
+      "position_age_minutes": 15.8,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 49.8,
+      "age_minutes": 15.8,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 93.5,
+        "cog": 298.1,
         "heading": 17.0,
-        "lat": -36.83881,
-        "lon": 174.75348,
-        "observed_at": "2026-11-12T01:55:14.941012+00:00",
+        "lat": -36.83882,
+        "lon": 174.75347,
+        "observed_at": "2026-11-12T02:34:14.253238+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -41,23 +41,23 @@
         "relation": "in_port"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 58.7,
+      "age_minutes": 18.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 239.5,
+        "cog": 216.0,
         "heading": 263.0,
-        "lat": 1.26267,
+        "lat": 1.26266,
         "lon": 103.81181,
-        "observed_at": "2026-11-12T01:46:18.599780+00:00",
+        "observed_at": "2026-11-12T02:31:17.607879+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
