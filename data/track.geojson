@@ -11015,13 +11015,37 @@
         "vessel_id": "abeona"
       },
       "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            103.81179,
+            1.2627
+          ],
+          [
+            103.81179,
+            1.26271
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "ended_at": "2026-11-13T06:49:17.090377+00:00",
+        "name": "ABEONA",
+        "point_count": 2,
+        "segment_index": 66,
+        "started_at": "2026-11-13T06:37:18.157083+00:00",
+        "vessel_id": "abeona"
+      },
+      "type": "Feature"
     }
   ],
   "properties": {
     "gap_count": 131,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-13T07:00:15.089428+00:00",
-    "public_data_through": "2026-11-13T06:45:15.089428+00:00"
+    "generated_at": "2026-11-13T07:05:02.589034+00:00",
+    "public_data_through": "2026-11-13T06:50:02.589034+00:00"
   },
   "type": "FeatureCollection"
 }
