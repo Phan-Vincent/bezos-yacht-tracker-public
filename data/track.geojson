@@ -10868,8 +10868,8 @@
   "properties": {
     "gap_count": 130,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-13T15:45:12.847969+00:00",
-    "public_data_through": "2026-11-13T15:30:12.847969+00:00"
+    "generated_at": "2026-11-13T15:50:14.444535+00:00",
+    "public_data_through": "2026-11-13T15:35:14.444535+00:00"
   },
   "type": "FeatureCollection"
 }
