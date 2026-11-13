@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-13T11:10:09.592395+00:00",
+  "generated_at": "2026-11-13T11:15:07.111744+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.6
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-13T10:55:09.592395+00:00",
+  "public_data_through": "2026-11-13T11:00:07.111744+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-13T10:46:13.936978+00:00",
-      "position_age_minutes": 23.9,
+      "last_accepted_position_at": "2026-11-13T10:58:17.070662+00:00",
+      "position_age_minutes": 16.8,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 23.9,
+      "age_minutes": 16.9,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 22.8,
+        "cog": 254.8,
         "heading": 17.0,
         "lat": -36.83882,
         "lon": 174.75346,
-        "observed_at": "2026-11-13T10:46:13.936978+00:00",
+        "observed_at": "2026-11-13T10:58:14.882484+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 59.9,
+      "age_minutes": 16.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 316.4,
-        "heading": 262.0,
-        "lat": 1.26268,
+        "cog": 13.7,
+        "heading": 263.0,
+        "lat": 1.26269,
         "lon": 103.81181,
-        "observed_at": "2026-11-13T10:10:17.497891+00:00",
+        "observed_at": "2026-11-13T10:58:17.070662+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
