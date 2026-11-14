@@ -9146,7 +9146,7 @@
         "ended_at": "2026-10-15T07:49:17.665027+00:00",
         "name": "ABEONA",
         "point_count": 15,
-        "segment_index": 1,
+        "segment_index": 0,
         "started_at": "2026-10-15T02:31:17.230371+00:00",
         "vessel_id": "abeona"
       },
@@ -9202,7 +9202,7 @@
         "ended_at": "2026-10-15T16:43:17.413151+00:00",
         "name": "ABEONA",
         "point_count": 10,
-        "segment_index": 2,
+        "segment_index": 1,
         "started_at": "2026-10-15T13:43:18.142435+00:00",
         "vessel_id": "abeona"
       },
@@ -9234,7 +9234,7 @@
         "ended_at": "2026-10-16T00:25:16.985822+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 4,
+        "segment_index": 3,
         "started_at": "2026-10-15T22:43:17.139206+00:00",
         "vessel_id": "abeona"
       },
@@ -9294,7 +9294,7 @@
         "ended_at": "2026-10-16T06:13:18.378605+00:00",
         "name": "ABEONA",
         "point_count": 11,
-        "segment_index": 5,
+        "segment_index": 4,
         "started_at": "2026-10-16T02:43:17.894277+00:00",
         "vessel_id": "abeona"
       },
@@ -9318,7 +9318,7 @@
         "ended_at": "2026-10-16T08:13:17.348156+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 6,
+        "segment_index": 5,
         "started_at": "2026-10-16T07:52:18.343228+00:00",
         "vessel_id": "abeona"
       },
@@ -9346,7 +9346,7 @@
         "ended_at": "2026-10-20T01:34:17.016073+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 10,
+        "segment_index": 9,
         "started_at": "2026-10-20T00:46:17.968214+00:00",
         "vessel_id": "abeona"
       },
@@ -9378,7 +9378,7 @@
         "ended_at": "2026-10-21T02:22:17.139754+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 14,
+        "segment_index": 13,
         "started_at": "2026-10-21T01:13:18.133840+00:00",
         "vessel_id": "abeona"
       },
@@ -9406,7 +9406,7 @@
         "ended_at": "2026-10-22T02:13:16.663180+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 16,
+        "segment_index": 15,
         "started_at": "2026-10-22T01:28:17.924367+00:00",
         "vessel_id": "abeona"
       },
@@ -9430,7 +9430,7 @@
         "ended_at": "2026-10-22T11:28:16.694037+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 17,
+        "segment_index": 16,
         "started_at": "2026-10-22T11:19:17.897394+00:00",
         "vessel_id": "abeona"
       },
@@ -9522,7 +9522,7 @@
         "ended_at": "2026-10-23T06:40:17.163017+00:00",
         "name": "ABEONA",
         "point_count": 19,
-        "segment_index": 18,
+        "segment_index": 17,
         "started_at": "2026-10-23T00:37:18.231417+00:00",
         "vessel_id": "abeona"
       },
@@ -9554,7 +9554,7 @@
         "ended_at": "2026-10-23T10:13:17.272049+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 19,
+        "segment_index": 18,
         "started_at": "2026-10-23T09:43:17.422879+00:00",
         "vessel_id": "abeona"
       },
@@ -9586,7 +9586,7 @@
         "ended_at": "2026-10-24T03:22:18.201288+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 20,
+        "segment_index": 19,
         "started_at": "2026-10-24T01:28:17.972636+00:00",
         "vessel_id": "abeona"
       },
@@ -9614,7 +9614,7 @@
         "ended_at": "2026-10-26T10:25:17.569985+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 21,
+        "segment_index": 20,
         "started_at": "2026-10-26T09:16:17.030345+00:00",
         "vessel_id": "abeona"
       },
@@ -9638,7 +9638,7 @@
         "ended_at": "2026-10-27T03:31:17.223915+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 22,
+        "segment_index": 21,
         "started_at": "2026-10-27T03:13:18.208820+00:00",
         "vessel_id": "abeona"
       },
@@ -9670,7 +9670,7 @@
         "ended_at": "2026-10-28T01:55:16.945927+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 24,
+        "segment_index": 23,
         "started_at": "2026-10-28T00:34:17.136253+00:00",
         "vessel_id": "abeona"
       },
@@ -9694,7 +9694,7 @@
         "ended_at": "2026-10-28T19:04:17.778993+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 26,
+        "segment_index": 25,
         "started_at": "2026-10-28T17:49:17.824767+00:00",
         "vessel_id": "abeona"
       },
@@ -9722,7 +9722,7 @@
         "ended_at": "2026-10-29T00:04:18.321563+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 27,
+        "segment_index": 26,
         "started_at": "2026-10-28T21:34:16.768912+00:00",
         "vessel_id": "abeona"
       },
@@ -9746,7 +9746,7 @@
         "ended_at": "2026-11-02T22:22:17.962085+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 32,
+        "segment_index": 31,
         "started_at": "2026-11-02T22:19:16.883450+00:00",
         "vessel_id": "abeona"
       },
@@ -9770,7 +9770,7 @@
         "ended_at": "2026-11-03T09:04:17.066736+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 34,
+        "segment_index": 33,
         "started_at": "2026-11-03T08:31:18.181102+00:00",
         "vessel_id": "abeona"
       },
@@ -9802,7 +9802,7 @@
         "ended_at": "2026-11-04T23:46:17.852897+00:00",
         "name": "ABEONA",
         "point_count": 4,
-        "segment_index": 39,
+        "segment_index": 38,
         "started_at": "2026-11-04T22:01:17.008318+00:00",
         "vessel_id": "abeona"
       },
@@ -9846,7 +9846,7 @@
         "ended_at": "2026-11-05T08:16:16.919012+00:00",
         "name": "ABEONA",
         "point_count": 7,
-        "segment_index": 40,
+        "segment_index": 39,
         "started_at": "2026-11-05T04:13:17.804649+00:00",
         "vessel_id": "abeona"
       },
@@ -9874,7 +9874,7 @@
         "ended_at": "2026-11-06T03:25:16.975775+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 44,
+        "segment_index": 43,
         "started_at": "2026-11-06T02:52:16.817166+00:00",
         "vessel_id": "abeona"
       },
@@ -9954,7 +9954,7 @@
         "ended_at": "2026-11-06T09:58:18.061957+00:00",
         "name": "ABEONA",
         "point_count": 16,
-        "segment_index": 45,
+        "segment_index": 44,
         "started_at": "2026-11-06T05:58:17.212992+00:00",
         "vessel_id": "abeona"
       },
@@ -9978,7 +9978,7 @@
         "ended_at": "2026-11-06T16:07:17.377397+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 46,
+        "segment_index": 45,
         "started_at": "2026-11-06T15:37:17.014637+00:00",
         "vessel_id": "abeona"
       },
@@ -10022,7 +10022,7 @@
         "ended_at": "2026-11-07T03:04:17.145820+00:00",
         "name": "ABEONA",
         "point_count": 7,
-        "segment_index": 47,
+        "segment_index": 46,
         "started_at": "2026-11-06T23:46:17.778627+00:00",
         "vessel_id": "abeona"
       },
@@ -10046,7 +10046,7 @@
         "ended_at": "2026-11-07T08:46:17.140790+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 48,
+        "segment_index": 47,
         "started_at": "2026-11-07T08:34:17.699973+00:00",
         "vessel_id": "abeona"
       },
@@ -10094,7 +10094,7 @@
         "ended_at": "2026-11-09T12:01:18.667306+00:00",
         "name": "ABEONA",
         "point_count": 8,
-        "segment_index": 50,
+        "segment_index": 49,
         "started_at": "2026-11-09T09:10:18.700422+00:00",
         "vessel_id": "abeona"
       },
@@ -10170,7 +10170,7 @@
         "ended_at": "2026-11-09T22:31:18.202095+00:00",
         "name": "ABEONA",
         "point_count": 15,
-        "segment_index": 51,
+        "segment_index": 50,
         "started_at": "2026-11-09T13:40:17.539708+00:00",
         "vessel_id": "abeona"
       },
@@ -10250,7 +10250,7 @@
         "ended_at": "2026-11-10T04:58:17.646848+00:00",
         "name": "ABEONA",
         "point_count": 16,
-        "segment_index": 52,
+        "segment_index": 51,
         "started_at": "2026-11-10T00:13:16.822852+00:00",
         "vessel_id": "abeona"
       },
@@ -10290,7 +10290,7 @@
         "ended_at": "2026-11-10T09:07:17.783109+00:00",
         "name": "ABEONA",
         "point_count": 6,
-        "segment_index": 53,
+        "segment_index": 52,
         "started_at": "2026-11-10T06:28:17.757154+00:00",
         "vessel_id": "abeona"
       },
@@ -10326,7 +10326,7 @@
         "ended_at": "2026-11-10T13:19:18.715146+00:00",
         "name": "ABEONA",
         "point_count": 5,
-        "segment_index": 54,
+        "segment_index": 53,
         "started_at": "2026-11-10T10:46:18.139173+00:00",
         "vessel_id": "abeona"
       },
@@ -10350,7 +10350,7 @@
         "ended_at": "2026-11-10T15:55:18.253292+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 55,
+        "segment_index": 54,
         "started_at": "2026-11-10T15:16:18.222194+00:00",
         "vessel_id": "abeona"
       },
@@ -10426,7 +10426,7 @@
         "ended_at": "2026-11-11T07:49:16.991922+00:00",
         "name": "ABEONA",
         "point_count": 15,
-        "segment_index": 56,
+        "segment_index": 55,
         "started_at": "2026-11-11T00:25:17.138384+00:00",
         "vessel_id": "abeona"
       },
@@ -10454,7 +10454,7 @@
         "ended_at": "2026-11-11T09:37:17.461138+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 57,
+        "segment_index": 56,
         "started_at": "2026-11-11T09:19:17.224259+00:00",
         "vessel_id": "abeona"
       },
@@ -10510,7 +10510,7 @@
         "ended_at": "2026-11-12T06:10:18.421296+00:00",
         "name": "ABEONA",
         "point_count": 10,
-        "segment_index": 58,
+        "segment_index": 57,
         "started_at": "2026-11-12T01:28:17.770382+00:00",
         "vessel_id": "abeona"
       },
@@ -10534,7 +10534,7 @@
         "ended_at": "2026-11-12T15:43:17.489200+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 61,
+        "segment_index": 60,
         "started_at": "2026-11-12T15:31:16.766831+00:00",
         "vessel_id": "abeona"
       },
@@ -10558,7 +10558,7 @@
         "ended_at": "2026-11-12T22:43:17.086432+00:00",
         "name": "ABEONA",
         "point_count": 2,
-        "segment_index": 62,
+        "segment_index": 61,
         "started_at": "2026-11-12T21:55:16.748001+00:00",
         "vessel_id": "abeona"
       },
@@ -10586,7 +10586,7 @@
         "ended_at": "2026-11-13T01:37:17.702145+00:00",
         "name": "ABEONA",
         "point_count": 3,
-        "segment_index": 63,
+        "segment_index": 62,
         "started_at": "2026-11-13T00:46:18.074125+00:00",
         "vessel_id": "abeona"
       },
@@ -10634,7 +10634,7 @@
         "ended_at": "2026-11-13T10:58:17.070662+00:00",
         "name": "ABEONA",
         "point_count": 8,
-        "segment_index": 64,
+        "segment_index": 63,
         "started_at": "2026-11-13T06:37:18.157083+00:00",
         "vessel_id": "abeona"
       },
@@ -10670,7 +10670,7 @@
         "ended_at": "2026-11-13T15:43:17.769483+00:00",
         "name": "ABEONA",
         "point_count": 5,
-        "segment_index": 65,
+        "segment_index": 64,
         "started_at": "2026-11-13T12:37:18.057114+00:00",
         "vessel_id": "abeona"
       },
@@ -10678,10 +10678,10 @@
     }
   ],
   "properties": {
-    "gap_count": 131,
+    "gap_count": 130,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-14T00:45:15.589405+00:00",
-    "public_data_through": "2026-11-14T00:30:15.589405+00:00"
+    "generated_at": "2026-11-14T00:50:06.600674+00:00",
+    "public_data_through": "2026-11-14T00:35:06.600674+00:00"
   },
   "type": "FeatureCollection"
 }
