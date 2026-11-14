@@ -8948,10 +8948,6 @@
       "geometry": {
         "coordinates": [
           [
-            103.8118,
-            1.26271
-          ],
-          [
             103.81182,
             1.2627
           ],
@@ -8985,9 +8981,9 @@
       "properties": {
         "ended_at": "2026-10-15T16:43:17.413151+00:00",
         "name": "ABEONA",
-        "point_count": 8,
+        "point_count": 7,
         "segment_index": 0,
-        "started_at": "2026-10-15T14:25:17.009639+00:00",
+        "started_at": "2026-10-15T14:43:18.520933+00:00",
         "vessel_id": "abeona"
       },
       "type": "Feature"
@@ -10532,8 +10528,8 @@
   "properties": {
     "gap_count": 132,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-14T14:40:06.343515+00:00",
-    "public_data_through": "2026-11-14T14:25:06.343515+00:00"
+    "generated_at": "2026-11-14T14:45:06.367807+00:00",
+    "public_data_through": "2026-11-14T14:30:06.367807+00:00"
   },
   "type": "FeatureCollection"
 }
