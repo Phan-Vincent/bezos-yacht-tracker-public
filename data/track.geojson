@@ -5,10 +5,6 @@
         "coordinates": [
           [
             174.75346,
-            -36.8388
-          ],
-          [
-            174.75346,
             -36.83881
           ],
           [
@@ -1697,9 +1693,9 @@
       "properties": {
         "ended_at": "2026-10-20T08:49:13.120564+00:00",
         "name": "KORU",
-        "point_count": 422,
+        "point_count": 421,
         "segment_index": 0,
-        "started_at": "2026-10-17T05:49:14.843722+00:00",
+        "started_at": "2026-10-17T06:04:13.310593+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -8610,14 +8606,18 @@
           [
             174.75347,
             -36.83881
+          ],
+          [
+            174.75347,
+            -36.83882
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-11-16T05:43:13.861011+00:00",
+        "ended_at": "2026-11-16T05:49:13.055727+00:00",
         "name": "KORU",
-        "point_count": 136,
+        "point_count": 137,
         "segment_index": 66,
         "started_at": "2026-11-14T17:55:13.381497+00:00",
         "vessel_id": "koru"
@@ -10070,14 +10070,18 @@
           [
             103.81181,
             1.26269
+          ],
+          [
+            103.8118,
+            1.2627
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-11-16T05:01:17.046611+00:00",
+        "ended_at": "2026-11-16T05:49:18.070505+00:00",
         "name": "ABEONA",
-        "point_count": 6,
+        "point_count": 7,
         "segment_index": 64,
         "started_at": "2026-11-16T04:22:18.974508+00:00",
         "vessel_id": "abeona"
@@ -10088,8 +10092,8 @@
   "properties": {
     "gap_count": 130,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-16T06:00:06.598737+00:00",
-    "public_data_through": "2026-11-16T05:45:06.598737+00:00"
+    "generated_at": "2026-11-16T06:05:03.870344+00:00",
+    "public_data_through": "2026-11-16T05:50:03.870344+00:00"
   },
   "type": "FeatureCollection"
 }

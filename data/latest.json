@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-16T06:00:06.598737+00:00",
+  "generated_at": "2026-11-16T06:05:03.870344+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.7
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-16T05:45:06.598737+00:00",
+  "public_data_through": "2026-11-16T05:50:03.870344+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-16T05:43:13.861011+00:00",
-      "position_age_minutes": 16.9,
+      "last_accepted_position_at": "2026-11-16T05:49:18.070505+00:00",
+      "position_age_minutes": 15.8,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 16.9,
+      "age_minutes": 15.8,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 155.3,
+        "cog": 228.2,
         "heading": 17.0,
-        "lat": -36.83881,
+        "lat": -36.83882,
         "lon": 174.75347,
-        "observed_at": "2026-11-16T05:43:13.861011+00:00",
+        "observed_at": "2026-11-16T05:49:13.055727+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 58.8,
+      "age_minutes": 15.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 277.3,
+        "cog": 278.2,
         "heading": 264.0,
-        "lat": 1.26269,
-        "lon": 103.81181,
-        "observed_at": "2026-11-16T05:01:17.046611+00:00",
+        "lat": 1.2627,
+        "lon": 103.8118,
+        "observed_at": "2026-11-16T05:49:18.070505+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
