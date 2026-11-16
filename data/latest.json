@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16T19:15:19.345362+00:00",
+  "generated_at": "2026-11-16T19:20:03.378771+00:00",
   "pairing": null,
-  "public_data_through": "2026-11-16T19:00:19.345362+00:00",
+  "public_data_through": "2026-11-16T19:05:03.378771+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-16T18:56:55.121949+00:00",
-      "position_age_minutes": 18.4,
+      "last_accepted_position_at": "2026-11-16T19:00:55.078511+00:00",
+      "position_age_minutes": 19.1,
       "transport_status": "connected"
     }
   },
@@ -16,24 +16,24 @@
   },
   "vessels": [
     {
-      "age_minutes": 18.4,
+      "age_minutes": 19.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 107.1,
-        "heading": 108.0,
-        "lat": -36.83404,
-        "lon": 174.7644,
-        "observed_at": "2026-11-16T18:56:55.121949+00:00",
-        "sog": 6.9,
+        "cog": 105.7,
+        "heading": 105.0,
+        "lat": -36.83603,
+        "lon": 174.77214,
+        "observed_at": "2026-11-16T19:00:55.078511+00:00",
+        "sog": 4.2,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "place": {
         "country": "New Zealand",
-        "distance_nm": 0.5,
+        "distance_nm": 0.7,
         "name": "Auckland",
         "relation": "in_port"
       },
@@ -45,7 +45,7 @@
       }
     },
     {
-      "age_minutes": 419.0,
+      "age_minutes": 423.8,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
