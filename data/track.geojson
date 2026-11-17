@@ -4,10 +4,6 @@
       "geometry": {
         "coordinates": [
           [
-            174.75347,
-            -36.83879
-          ],
-          [
             174.75348,
             -36.83879
           ],
@@ -1165,9 +1161,9 @@
       "properties": {
         "ended_at": "2026-10-20T08:49:13.120564+00:00",
         "name": "KORU",
-        "point_count": 289,
+        "point_count": 288,
         "segment_index": 0,
-        "started_at": "2026-10-18T02:22:14.859563+00:00",
+        "started_at": "2026-10-18T02:28:13.753012+00:00",
         "vessel_id": "koru"
       },
       "type": "Feature"
@@ -8514,14 +8510,18 @@
           [
             174.77283,
             -36.83588
+          ],
+          [
+            174.75738,
+            -36.83591
           ]
         ],
         "type": "LineString"
       },
       "properties": {
-        "ended_at": "2026-11-17T02:15:13.390282+00:00",
+        "ended_at": "2026-11-17T02:22:52.773672+00:00",
         "name": "KORU",
-        "point_count": 245,
+        "point_count": 246,
         "segment_index": 66,
         "started_at": "2026-11-14T17:55:13.381497+00:00",
         "vessel_id": "koru"
@@ -10068,8 +10068,8 @@
   "properties": {
     "gap_count": 132,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-17T02:35:29.120581+00:00",
-    "public_data_through": "2026-11-17T02:20:29.120581+00:00"
+    "generated_at": "2026-11-17T02:40:29.107064+00:00",
+    "public_data_through": "2026-11-17T02:25:29.107064+00:00"
   },
   "type": "FeatureCollection"
 }
