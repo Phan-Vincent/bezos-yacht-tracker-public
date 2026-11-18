@@ -9912,8 +9912,8 @@
   "properties": {
     "gap_count": 136,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-18T15:40:29.117402+00:00",
-    "public_data_through": "2026-11-18T15:25:29.117402+00:00"
+    "generated_at": "2026-11-18T15:45:29.105520+00:00",
+    "public_data_through": "2026-11-18T15:30:29.105520+00:00"
   },
   "type": "FeatureCollection"
 }
