@@ -9888,8 +9888,8 @@
   "properties": {
     "gap_count": 132,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-20T08:05:06.404539+00:00",
-    "public_data_through": "2026-11-20T07:50:06.404539+00:00"
+    "generated_at": "2026-11-20T08:10:16.112773+00:00",
+    "public_data_through": "2026-11-20T07:55:16.112773+00:00"
   },
   "type": "FeatureCollection"
 }
