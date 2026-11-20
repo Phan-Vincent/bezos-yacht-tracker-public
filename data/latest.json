@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-20T20:40:04.295172+00:00",
+  "generated_at": "2026-11-20T20:45:22.791822+00:00",
   "pairing": null,
-  "public_data_through": "2026-11-20T20:25:04.295172+00:00",
+  "public_data_through": "2026-11-20T20:30:22.791822+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-20T19:53:14.549294+00:00",
-      "position_age_minutes": 46.8,
+      "last_accepted_position_at": "2026-11-20T20:26:16.143906+00:00",
+      "position_age_minutes": 19.1,
       "transport_status": "connected"
     }
   },
@@ -16,16 +16,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 46.8,
+      "age_minutes": 19.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 216.7,
+        "cog": 351.7,
         "heading": 18.0,
         "lat": -36.83884,
         "lon": 174.75346,
-        "observed_at": "2026-11-20T19:53:14.549294+00:00",
+        "observed_at": "2026-11-20T20:26:16.143906+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -38,14 +38,14 @@
         "relation": "in_port"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 644.8,
+      "age_minutes": 650.1,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
