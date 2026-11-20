@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-20T07:20:18.379782+00:00",
+  "generated_at": "2026-11-20T07:25:01.093388+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 1.0
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-20T07:05:18.379782+00:00",
+  "public_data_through": "2026-11-20T07:10:01.093388+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-20T07:05:14.563652+00:00",
-      "position_age_minutes": 15.1,
+      "last_accepted_position_at": "2026-11-20T07:07:17.273083+00:00",
+      "position_age_minutes": 17.7,
       "transport_status": "connected"
     }
   },
@@ -19,7 +19,7 @@
   },
   "vessels": [
     {
-      "age_minutes": 15.1,
+      "age_minutes": 19.8,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 73.0,
+      "age_minutes": 17.7,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 109.0,
+        "cog": 262.9,
         "heading": 263.0,
         "lat": 1.2627,
         "lon": 103.8118,
-        "observed_at": "2026-11-20T06:07:17.715715+00:00",
+        "observed_at": "2026-11-20T07:07:17.273083+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
