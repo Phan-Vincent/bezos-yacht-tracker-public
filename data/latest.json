@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-23T05:30:16.234358+00:00",
+  "generated_at": "2026-11-23T05:35:20.777402+00:00",
   "pairing": {
     "distance_nm": 4541.3,
-    "observations_within_hours": 0.4
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-23T05:15:16.234358+00:00",
+  "public_data_through": "2026-11-23T05:20:20.777402+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-23T05:02:15.065342+00:00",
-      "position_age_minutes": 28.0,
+      "last_accepted_position_at": "2026-11-23T05:19:17.820216+00:00",
+      "position_age_minutes": 16.0,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 28.0,
+      "age_minutes": 18.1,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 348.5,
+        "cog": 312.5,
         "heading": 18.0,
         "lat": -36.83883,
         "lon": 174.75346,
-        "observed_at": "2026-11-23T05:02:15.065342+00:00",
+        "observed_at": "2026-11-23T05:17:14.987122+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -48,16 +48,16 @@
       }
     },
     {
-      "age_minutes": 53.0,
+      "age_minutes": 16.0,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 239.1,
-        "heading": 262.0,
-        "lat": 1.26267,
+        "cog": 194.9,
+        "heading": 264.0,
+        "lat": 1.26268,
         "lon": 103.81181,
-        "observed_at": "2026-11-23T04:37:17.158024+00:00",
+        "observed_at": "2026-11-23T05:19:17.820216+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -70,7 +70,7 @@
         "relation": "in_port"
       },
       "role": "support_vessel",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Asia/Singapore"
