@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-24T06:00:03.093895+00:00",
+  "generated_at": "2026-11-24T06:05:18.848691+00:00",
   "pairing": {
-    "distance_nm": 4537.5,
-    "observations_within_hours": 0.2
+    "distance_nm": 4535.2,
+    "observations_within_hours": 0.0
   },
-  "public_data_through": "2026-11-24T05:45:03.093895+00:00",
+  "public_data_through": "2026-11-24T05:50:18.848691+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-24T05:37:08.477884+00:00",
-      "position_age_minutes": 22.9,
+      "last_accepted_position_at": "2026-11-24T05:49:39.370218+00:00",
+      "position_age_minutes": 15.7,
       "transport_status": "connected"
     }
   },
@@ -19,16 +19,16 @@
   },
   "vessels": [
     {
-      "age_minutes": 33.8,
+      "age_minutes": 18.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 60.6,
+        "cog": 222.9,
         "heading": 18.0,
         "lat": -36.83884,
         "lon": 174.75346,
-        "observed_at": "2026-11-24T05:26:16.108736+00:00",
+        "observed_at": "2026-11-24T05:47:16.056189+00:00",
         "sog": 0.0,
         "source": "aisstream"
       },
@@ -41,31 +41,31 @@
         "relation": "in_port"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 22.9,
+      "age_minutes": 15.7,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
       "latest": {
-        "cog": 107.9,
-        "heading": 127.0,
-        "lat": 1.19917,
-        "lon": 103.843,
-        "observed_at": "2026-11-24T05:37:08.477884+00:00",
-        "sog": 8.3,
+        "cog": 59.2,
+        "heading": 64.0,
+        "lat": 1.20695,
+        "lon": 103.89827,
+        "observed_at": "2026-11-24T05:49:39.370218+00:00",
+        "sog": 17.6,
         "source": "aisstream"
       },
       "mmsi": "319225500",
       "name": "ABEONA",
       "place": {
         "country": "Singapore",
-        "distance_nm": 5.7,
+        "distance_nm": 8.0,
         "name": "Singapore",
         "relation": "in_port"
       },
