@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26T21:55:15.847820+00:00",
+  "generated_at": "2026-11-26T22:00:00.839009+00:00",
   "pairing": null,
-  "public_data_through": "2026-11-26T21:40:15.847820+00:00",
+  "public_data_through": "2026-11-26T21:45:00.839009+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-26T21:39:32.584016+00:00",
-      "position_age_minutes": 15.7,
+      "last_accepted_position_at": "2026-11-26T21:42:03.533156+00:00",
+      "position_age_minutes": 18.0,
       "transport_status": "connected"
     }
   },
@@ -16,24 +16,24 @@
   },
   "vessels": [
     {
-      "age_minutes": 15.7,
+      "age_minutes": 18.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 61.2,
+        "cog": 61.1,
         "heading": 63.0,
-        "lat": -36.66375,
-        "lon": 174.94838,
-        "observed_at": "2026-11-26T21:39:32.584016+00:00",
-        "sog": 10.0,
+        "lat": -36.6604,
+        "lon": 174.95606,
+        "observed_at": "2026-11-26T21:42:03.533156+00:00",
+        "sog": 10.1,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "place": {
         "country": "New Zealand",
-        "distance_nm": 8.5,
+        "distance_nm": 8.6,
         "name": "Waiheke Island",
         "relation": "near"
       },
@@ -45,7 +45,7 @@
       }
     },
     {
-      "age_minutes": 2375.5,
+      "age_minutes": 2380.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
