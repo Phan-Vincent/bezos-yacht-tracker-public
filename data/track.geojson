@@ -10124,8 +10124,8 @@
   "properties": {
     "gap_count": 122,
     "gap_threshold_minutes": 90,
-    "generated_at": "2026-11-26T04:00:04.836982+00:00",
-    "public_data_through": "2026-11-26T03:45:04.836982+00:00"
+    "generated_at": "2026-11-26T04:05:17.100978+00:00",
+    "public_data_through": "2026-11-26T03:50:17.100978+00:00"
   },
   "type": "FeatureCollection"
 }
