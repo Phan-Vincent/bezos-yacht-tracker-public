@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T02:55:08.592116+00:00",
+  "generated_at": "2026-11-27T03:00:02.839989+00:00",
   "pairing": null,
-  "public_data_through": "2026-11-27T02:40:08.592116+00:00",
+  "public_data_through": "2026-11-27T02:45:02.839989+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
       "last_accepted_position_at": "2026-11-27T00:53:33.144509+00:00",
-      "position_age_minutes": 121.6,
+      "position_age_minutes": 126.5,
       "transport_status": "connected"
     }
   },
@@ -16,24 +16,24 @@
   },
   "vessels": [
     {
-      "age_minutes": 121.6,
+      "age_minutes": 31.0,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 341.0,
-        "heading": 341.0,
-        "lat": -36.31862,
-        "lon": 174.97375,
-        "observed_at": "2026-11-27T00:53:33.144509+00:00",
-        "sog": 10.2,
-        "source": "aisstream"
+        "cog": 163.5,
+        "heading": 165.0,
+        "lat": -36.33852,
+        "lon": 174.97024,
+        "observed_at": "2026-11-27T02:29:00+00:00",
+        "sog": 11.0,
+        "source": "vesselapi"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "place": {
         "country": "New Zealand",
-        "distance_nm": 20.9,
+        "distance_nm": 21.6,
         "name": "Port Fitzroy",
         "relation": "near"
       },
@@ -45,7 +45,7 @@
       }
     },
     {
-      "age_minutes": 2675.4,
+      "age_minutes": 2680.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
