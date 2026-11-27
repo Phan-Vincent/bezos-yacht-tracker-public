@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T01:05:12.605165+00:00",
+  "generated_at": "2026-11-27T01:10:00.355751+00:00",
   "pairing": null,
-  "public_data_through": "2026-11-27T00:50:12.605165+00:00",
+  "public_data_through": "2026-11-27T00:55:00.355751+00:00",
   "public_delay_minutes": 15,
   "schema_version": 1,
   "source_activity": {
     "aisstream": {
-      "last_accepted_position_at": "2026-11-26T23:09:52.823777+00:00",
-      "position_age_minutes": 115.3,
+      "last_accepted_position_at": "2026-11-27T00:53:33.144509+00:00",
+      "position_age_minutes": 16.5,
       "transport_status": "connected"
     }
   },
@@ -16,36 +16,36 @@
   },
   "vessels": [
     {
-      "age_minutes": 115.3,
+      "age_minutes": 16.5,
       "association": "publicly_reported_bezos",
       "id": "koru",
       "imo": "9857298",
       "latest": {
-        "cog": 345.3,
-        "heading": 345.0,
-        "lat": -36.52839,
-        "lon": 175.06909,
-        "observed_at": "2026-11-26T23:09:52.823777+00:00",
-        "sog": 7.8,
+        "cog": 341.0,
+        "heading": 341.0,
+        "lat": -36.31862,
+        "lon": 174.97375,
+        "observed_at": "2026-11-27T00:53:33.144509+00:00",
+        "sog": 10.2,
         "source": "aisstream"
       },
       "mmsi": "319225400",
       "name": "KORU",
       "place": {
         "country": "New Zealand",
-        "distance_nm": 15.8,
-        "name": "Waiheke Island",
+        "distance_nm": 20.9,
+        "name": "Port Fitzroy",
         "relation": "near"
       },
       "role": "primary_yacht",
-      "status": "stale",
+      "status": "current",
       "timezone": {
         "basis": "place",
         "name": "Pacific/Auckland"
       }
     },
     {
-      "age_minutes": 2565.5,
+      "age_minutes": 2570.3,
       "association": "publicly_reported_koru_support",
       "id": "abeona",
       "imo": "9899349",
