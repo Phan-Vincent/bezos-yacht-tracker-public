@@ -3,6 +3,22 @@
     {
       "confidence": 1.0,
       "details": {
+        "episode_id": 63,
+        "gap_hours": 48.00003709166666,
+        "last_observation_at": "2026-11-25T06:19:43.887870+00:00",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/"
+      },
+      "id": "signal-gap:63",
+      "lat": 1.28765,
+      "lon": 104.13709,
+      "occurred_at": "2026-11-27T06:19:44.021400+00:00",
+      "type": "SIGNAL_GAP",
+      "vessel_id": "abeona",
+      "vessel_name": "ABEONA"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "lat": -36.83273833333333,
         "lon": 174.75939333333332,
         "port": "Auckland",
@@ -841,21 +857,6 @@
     {
       "confidence": 1.0,
       "details": {
-        "episode_id": 40,
-        "gap_hours": 16.783333333333335,
-        "site_url": ""
-      },
-      "id": "signal-restored:40",
-      "lat": -5.66331,
-      "lon": 112.95469,
-      "occurred_at": "2026-09-06T21:12:00+00:00",
-      "type": "SIGNAL_RESTORED",
-      "vessel_id": "abeona",
-      "vessel_name": "ABEONA"
-    },
-    {
-      "confidence": 1.0,
-      "details": {
         "backfilled": true,
         "last_seen_outside_at": "2026-08-17T02:27:00+00:00",
         "lat": -16.91434,
@@ -892,7 +893,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-11-27T06:30:12.870932+00:00",
-  "public_data_through": "2026-11-27T06:15:12.870932+00:00",
+  "generated_at": "2026-11-27T06:35:03.604027+00:00",
+  "public_data_through": "2026-11-27T06:20:03.604027+00:00",
   "schema_version": 1
 }
