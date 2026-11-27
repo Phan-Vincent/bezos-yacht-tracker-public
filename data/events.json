@@ -3,6 +3,23 @@
     {
       "confidence": 1.0,
       "details": {
+        "lat": -36.83273833333333,
+        "lon": 174.75939333333332,
+        "port": "Auckland",
+        "site_url": "https://phan-vincent.github.io/bezos-yacht-tracker-public/",
+        "sog": 1
+      },
+      "id": "arrival:koru:Auckland:2026-11-27T06:05:11.581062+00:00",
+      "lat": -36.83274,
+      "lon": 174.75939,
+      "occurred_at": "2026-11-27T06:05:11.581062+00:00",
+      "type": "ARRIVAL",
+      "vessel_id": "koru",
+      "vessel_name": "KORU"
+    },
+    {
+      "confidence": 1.0,
+      "details": {
         "lat": -36.822516666666665,
         "lon": 174.83166166666666,
         "port": "Auckland",
@@ -875,7 +892,7 @@
       "vessel_name": "KORU"
     }
   ],
-  "generated_at": "2026-11-27T06:20:10.841569+00:00",
-  "public_data_through": "2026-11-27T06:05:10.841569+00:00",
+  "generated_at": "2026-11-27T06:25:19.098950+00:00",
+  "public_data_through": "2026-11-27T06:10:19.098950+00:00",
   "schema_version": 1
 }
